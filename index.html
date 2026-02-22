@@ -3,443 +3,452 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Wallet Trackers of 2025 — PrimePicks Review</title>
+  <title>Best Wallet Trackers of 2025 — PrimePicks.Review</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
       --body-bg: #f9f9f9;
       --header-bg: #ffffff;
-      --header-text: #0a0a0a;
-      --hero-heading-color: #333;
-      --hero-text-color: #4F4F4F;
-      --text-link-color: #0769ed;
-      --product-index-bg: #009463;
-      --product-secondary-index-bg: #00A0B6;
-      --product-index-text: #FFFFFF;
       --product-heading-bg: #232f3e;
-      --product-heading-text: #FFFFFF;
+      --product-heading-text: #ffffff;
+      --product-index-bg: #009463;
       --product-cta-bg: #00B67A;
-      --product-cta-hover-bg: #00ba56;
-      --product-cta-text: #FFFFFF;
+      --product-cta-hover: #00ba56;
       --product-cta-shadow: #009463;
-      --product-border: #232f3e;
+      --text-link: #0769ed;
       --gray-1: #333333;
       --gray-2: #4f4f4f;
       --gray-3: #828282;
       --gray-4: #bdbdbd;
       --gray-5: #e0e0e0;
       --gray-6: #f2f2f2;
-      --harvest-gold: #dd9302;
-      --rank4: #e07b22;
-      --rank5: #9e7a2b;
+      --gold: #dd9302;
+      --red: #e53935;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Open Sans', sans-serif;
       background: var(--body-bg);
       color: var(--gray-1);
       -webkit-font-smoothing: antialiased;
-      line-height: 1.6;
       font-size: 15px;
+      line-height: 1.6;
     }
-    a { color: var(--text-link-color); text-decoration: none; }
+    a { color: var(--text-link); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    strong { font-weight: 700; }
 
     /* ── HEADER ── */
     header {
       background: var(--header-bg);
       border-bottom: 1px solid var(--gray-5);
       position: sticky; top: 0; z-index: 100;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
     }
     .header-inner {
       max-width: 960px; margin: 0 auto; padding: 0 16px;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 58px;
+      display: flex; align-items: center; height: 56px;
+      gap: 10px;
     }
-    .logo { display: flex; align-items: center; gap: 8px; text-decoration: none !important; }
-    .logo-icon {
-      width: 28px; height: 28px; background: var(--product-cta-bg);
-      border-radius: 5px; display: flex; align-items: center;
-      justify-content: center; color: white; font-size: 14px; font-weight: 700;
-    }
-    .logo-text { font-size: 17px; font-weight: 700; color: var(--header-text); }
-    nav { display: flex; gap: 20px; }
-    nav a { color: var(--gray-2); font-size: 13px; font-weight: 600; }
-    nav a:hover { color: var(--gray-1); text-decoration: none; }
+    .logo-img { height: 28px; width: auto; }
+    .logo-text-wrap { display: flex; align-items: center; gap: 0; }
+    .logo-prime { font-size: 16px; font-weight: 800; color: #0a0a0a; letter-spacing: -0.01em; }
+    .logo-picks { font-size: 16px; font-weight: 800; color: #0a0a0a; letter-spacing: -0.01em; }
+    .logo-dot { font-size: 16px; font-weight: 400; color: var(--gray-3); }
+    .logo-review { font-size: 16px; font-weight: 400; color: var(--gray-3); }
+
+    /* ── PAGE WRAPPER ── */
+    .page-wrap { max-width: 960px; margin: 0 auto; padding: 0 16px 32px; }
 
     /* ── HERO ── */
-    .hero { background: white; border-bottom: 1px solid var(--gray-5); }
-    .hero-inner { max-width: 960px; margin: 0 auto; padding: 22px 16px 0; }
-    .breadcrumb { font-size: 12px; color: var(--gray-3); margin-bottom: 12px; }
-    .breadcrumb a { color: var(--gray-3); }
-    .breadcrumb span { margin: 0 4px; }
-    .hero h1 { font-size: 30px; font-weight: 700; color: var(--hero-heading-color); line-height: 1.3; margin-bottom: 6px; }
-    .hero-subtitle { font-size: 15.5px; color: var(--gray-2); margin-bottom: 16px; line-height: 1.55; }
-    .hero-meta {
-      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
-      padding: 13px 0; border-top: 1px solid var(--gray-6);
-      font-size: 12.5px; color: var(--gray-3);
+    .hero {
+      background: white;
+      border-bottom: 1px solid var(--gray-5);
+      padding: 20px 0 0;
+      margin-bottom: 0;
     }
-    .author-row { display: flex; align-items: center; gap: 9px; }
-    .author-avatar { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+    .hero-inner { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    .hero h1 {
+      font-size: 28px; font-weight: 800; color: #333;
+      line-height: 1.25; margin-bottom: 8px; letter-spacing: -0.01em;
+    }
+    .hero-intro {
+      font-size: 14.5px; color: var(--gray-2); line-height: 1.75;
+      margin: 0; padding: 14px 0 16px;
+      border-top: 1px solid var(--gray-6);
+    }
+    .hero-author-bar {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      padding: 12px 0; border-top: 1px solid var(--gray-6);
+      font-size: 12.5px; color: var(--gray-3);
+      margin-top: 0;
+    }
+    .author-row { display: flex; align-items: center; gap: 8px; }
+    .author-avatar {
+      width: 34px; height: 34px; border-radius: 50%;
+      overflow: hidden; flex-shrink: 0; background: var(--gray-5);
+    }
     .author-avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .author-name { font-weight: 600; color: var(--gray-1); font-size: 13px; }
-    .author-role { font-size: 11px; color: var(--gray-3); }
+    .author-name { font-weight: 700; color: var(--gray-1); font-size: 13px; }
+    .author-sub { font-size: 11px; color: var(--gray-3); }
     .meta-sep { color: var(--gray-4); }
-
-    /* ── CONTAINER ── */
-    .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    .flag-us { display: inline-flex; align-items: center; gap: 4px; }
+    .tested-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      color: var(--product-index-bg); font-weight: 600; font-size: 12px;
+    }
 
     /* ── DISCLOSURE ── */
     .disclosure {
-      background: #fffbf0; border: 1px solid #f0d97a;
-      border-radius: 5px; padding: 9px 13px;
+      background: #fffbf0; border: 1px solid #e8d080;
+      border-radius: 4px; padding: 8px 12px;
       font-size: 12px; color: var(--gray-2); line-height: 1.6;
-      margin: 16px 0 18px;
+      margin: 14px 0 16px;
     }
 
-    /* ── SECTION LABEL ── */
-    .section-label {
-      font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--gray-3); margin-bottom: 9px;
+    /* ── PRODUCT LIST CARDS ── */
+    .product-list { margin-bottom: 24px; }
+
+    .pl-card {
+      background: white;
+      border: 2px solid var(--product-heading-bg);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 14px;
     }
 
-    /* ── TOP PICKS GRID ── */
-    .picks-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 10px; margin-bottom: 24px;
+    /* Best choice banner (above the header) */
+    .best-choice-banner {
+      background: #FF980E;
+      color: white; font-size: 12px; font-weight: 700;
+      padding: 5px 16px; text-align: center;
+      letter-spacing: 0.04em;
     }
-    .pick-card {
-      background: white; border: 1px solid var(--gray-5);
-      border-radius: 7px; overflow: hidden;
-      display: flex; flex-direction: column; transition: box-shadow 0.2s;
+
+    /* Card header bar — always dark navy */
+    .pl-header {
+      background: var(--product-heading-bg);
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px 16px;
     }
-    .pick-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.09); }
-    .pick-card-header {
-      background: var(--product-heading-bg); padding: 9px 12px;
-      display: flex; align-items: center; gap: 9px;
+    .pl-rank-badge {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--product-index-bg);
+      color: white; font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
     }
-    .rank-badge {
-      width: 32px; height: 32px; border-radius: 50%;
-      background: var(--product-index-bg); color: white;
-      font-size: 13px; font-weight: 700;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    .pl-header-title { color: white; font-size: 14px; font-weight: 700; }
+    .pl-header-sub { color: rgba(255,255,255,0.6); font-size: 11.5px; }
+
+    /* Card body: image | info | score+cta */
+    .pl-body {
+      display: grid;
+      grid-template-columns: 190px 1fr 200px;
+      gap: 0;
     }
-    .rank-badge.r2 { background: var(--product-secondary-index-bg); }
-    .rank-badge.r3 { background: var(--harvest-gold); }
-    .rank-badge.r4 { background: var(--rank4); }
-    .rank-badge.r5 { background: var(--rank5); }
-    .pick-card-title { color: white; font-size: 12px; font-weight: 600; line-height: 1.3; }
-    .pick-card-body { padding: 13px; display: flex; flex-direction: column; flex: 1; gap: 9px; }
-    .pick-img {
-      width: 100%; height: 120px; object-fit: contain;
-      background: var(--gray-6); border-radius: 4px; padding: 8px;
+    .pl-img-col {
+      padding: 18px 16px;
+      display: flex; align-items: center; justify-content: center;
+      border-right: 1px solid var(--gray-6);
     }
-    .pick-name { font-size: 13px; font-weight: 700; color: var(--gray-1); }
-    .pick-rating { display: flex; align-items: center; gap: 5px; }
-    .stars { color: var(--harvest-gold); font-size: 13px; letter-spacing: 1px; }
-    .rating-count { font-size: 11.5px; color: var(--gray-3); }
-    .pick-score-row { display: flex; align-items: center; gap: 8px; }
-    .score-pill {
-      background: var(--product-index-bg); color: white;
-      font-size: 17px; font-weight: 700; padding: 5px 12px;
-      border-radius: 5px; line-height: 1;
+    .pl-product-img {
+      width: 150px; height: 150px; object-fit: contain;
+      display: block;
     }
-    .score-pill.s2 { background: var(--product-secondary-index-bg); }
-    .score-pill.s3 { background: var(--harvest-gold); }
-    .score-label { font-size: 11.5px; color: var(--gray-3); }
-    .pick-features { list-style: none; font-size: 12px; color: var(--gray-2); }
-    .pick-features li {
-      padding: 2px 0; display: flex; align-items: flex-start; gap: 5px; line-height: 1.4;
+    .pl-info-col {
+      padding: 16px 18px;
+      border-right: 1px solid var(--gray-6);
     }
-    .pick-features li::before { content: "✓"; color: var(--product-index-bg); font-weight: 700; flex-shrink: 0; }
-    .deal-badge {
-      background: #ff4444; color: white; font-size: 11px; font-weight: 700;
+    .pl-product-name {
+      font-size: 15px; font-weight: 700; color: var(--gray-1);
+      margin-bottom: 12px;
+    }
+    .pros-cons-cols {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    .pros-label, .cons-label {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: 6px; display: flex; align-items: center; gap: 5px;
+    }
+    .pros-label { color: var(--product-index-bg); }
+    .cons-label { color: var(--red); }
+    .pros-list, .cons-list { list-style: none; }
+    .pros-list li, .cons-list li {
+      font-size: 12.5px; color: var(--gray-2);
+      padding: 2px 0; display: flex; align-items: flex-start; gap: 5px;
+      line-height: 1.45;
+    }
+    .check-icon { color: var(--product-index-bg); font-size: 13px; flex-shrink: 0; margin-top: 0px; }
+    .x-icon { color: var(--red); font-size: 13px; flex-shrink: 0; }
+
+    /* Right score+CTA column */
+    .pl-score-col {
+      padding: 16px 14px;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 4px;
+    }
+    .score-num-box {
+      color: #333333; font-size: 42px; font-weight: 800;
+      line-height: 1; margin-bottom: 0;
+    }
+    .score-label-text { font-size: 11px; color: var(--gray-3); margin-bottom: 2px; }
+    .score-rating-word {
+      font-size: 12px; font-weight: 700;
+      color: var(--product-index-bg);
+    }
+    .score-rating-word.s2 { color: #00A0B6; }
+    .score-rating-word.s3 { color: var(--gold); }
+    .score-rating-word.s4 { color: #e07b22; }
+    .score-rating-word.s5 { color: #9e7a2b; }
+    .stars-img { height: 18px; width: auto; margin: 2px 0; }
+    .review-count { font-size: 11px; color: var(--gray-3); margin-bottom: 4px; }
+    .deal-badge-red {
+      background: #ff4444; color: white;
+      font-size: 11px; font-weight: 700;
       padding: 3px 8px; border-radius: 3px; display: inline-block;
+      margin-bottom: 2px;
     }
-    .sales-note { font-size: 11px; color: var(--gray-3); font-style: italic; }
-    .btn-cta {
-      display: block; background: var(--product-cta-bg); color: white;
-      text-align: center; padding: 10px 13px; border-radius: 5px;
-      font-weight: 700; font-size: 12.5px; text-decoration: none !important;
-      box-shadow: 0 3px 0 var(--product-cta-shadow); margin-top: auto;
+    .ltd-deal-text {
+      font-size: 11px; color: var(--gray-2); font-weight: 600; margin-bottom: 2px;
+    }
+    .sales-proof { font-size: 10.5px; color: var(--gray-3); font-style: italic; margin-bottom: 6px; }
+    .cta-visit {
+      display: block; background: var(--product-cta-bg);
+      color: white; text-align: center; padding: 9px 14px;
+      border-radius: 5px; font-weight: 700; font-size: 13px;
+      text-decoration: none !important; width: 100%;
+      box-shadow: 0 3px 0 var(--product-cta-shadow);
       transition: background 0.15s, transform 0.1s;
     }
-    .btn-cta:hover { background: var(--product-cta-hover-bg); transform: translateY(-1px); }
-    .btn-cta:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--product-cta-shadow); }
+    .cta-visit:hover { background: var(--product-cta-hover); transform: translateY(-1px); }
+    .cta-visit:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--product-cta-shadow); }
 
-    /* ── ADVERTORIAL SECTION ── */
-    .advertorial-wrap {
+    /* ── ADVERTORIAL / EDITORIAL SECTION ── */
+    .editorial-wrap {
       background: white; border: 1px solid var(--gray-5);
-      border-radius: 8px; overflow: hidden; margin-bottom: 24px;
+      border-radius: 6px; overflow: hidden; margin-bottom: 20px;
     }
-    .adv-top-banner {
+    .editorial-banner {
       background: var(--product-heading-bg); color: white;
-      padding: 10px 22px; font-size: 11px; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      padding: 11px 20px; font-size: 14px; font-weight: 700;
+      display: flex; align-items: center; gap: 10px;
     }
-    .adv-badge-inline {
+    .editorial-banner-badge {
       background: var(--product-index-bg); color: white;
-      font-size: 11px; font-weight: 700; padding: 2px 9px;
+      font-size: 10.5px; font-weight: 700; padding: 2px 8px;
       border-radius: 3px; letter-spacing: 0.06em; flex-shrink: 0;
     }
-    .adv-grid {
-      display: grid; grid-template-columns: 1fr 270px;
-      gap: 0; align-items: start;
+    .editorial-inner {
+      display: grid; grid-template-columns: 1fr 260px; gap: 0;
     }
-    .adv-main { padding: 22px; border-right: 1px solid var(--gray-6); }
-    .adv-img {
-      width: 100%; height: 255px; object-fit: cover;
-      border-radius: 6px; margin-bottom: 18px; display: block;
+    .editorial-main { padding: 22px 24px; border-right: 1px solid var(--gray-6); }
+    .editorial-hero-img {
+      width: 100%; height: 240px; object-fit: cover;
+      border-radius: 5px; margin-bottom: 18px; display: block;
     }
-    .adv-heading { font-size: 19px; font-weight: 700; color: var(--gray-1); line-height: 1.4; margin-bottom: 14px; }
-    .adv-main p { font-size: 14px; line-height: 1.78; color: var(--gray-2); margin-bottom: 13px; }
-    .adv-main h3 { font-size: 15.5px; font-weight: 700; color: var(--gray-1); margin: 18px 0 10px; }
-    .adv-main p:last-child { margin-bottom: 0; }
-    .adv-highlight-list { list-style: none; margin: 12px 0 16px; }
-    .adv-highlight-list li {
-      font-size: 13.5px; color: var(--gray-2); padding: 5px 0;
-      display: flex; align-items: flex-start; gap: 8px; line-height: 1.4;
+    .editorial-h2 {
+      font-size: 19px; font-weight: 800; color: var(--gray-1);
+      line-height: 1.35; margin-bottom: 14px;
     }
-    .adv-highlight-list li::before { content: "✓"; color: var(--product-index-bg); font-weight: 700; flex-shrink: 0; }
-
-    /* Sidebar */
-    .adv-sidebar { padding: 18px; background: #fafafa; }
-    .sidebar-card {
-      background: white; border: 1px solid var(--gray-5);
-      border-radius: 8px; overflow: hidden;
-      position: sticky; top: 74px;
+    .editorial-main p {
+      font-size: 14px; line-height: 1.8; color: var(--gray-2);
+      margin-bottom: 13px;
     }
-    .sidebar-card-header {
+    .editorial-main h3 {
+      font-size: 16px; font-weight: 700; color: var(--gray-1);
+      margin: 18px 0 9px;
+    }
+    .editorial-main h2 {
+      font-size: 18px; font-weight: 800; color: var(--gray-1);
+      margin: 20px 0 10px;
+    }
+    .results-list { list-style: none; margin: 10px 0 16px; }
+    .results-list li {
+      font-size: 14px; color: var(--gray-2); padding: 6px 0;
+      display: flex; align-items: flex-start; gap: 10px;
+      line-height: 1.5; border-bottom: 1px solid var(--gray-6);
+    }
+    .results-list li:last-child { border-bottom: none; }
+    .results-num {
       background: var(--product-heading-bg); color: white;
-      padding: 9px 14px; display: flex; align-items: center; gap: 9px;
+      font-size: 11px; font-weight: 700; padding: 2px 7px;
+      border-radius: 3px; flex-shrink: 0; margin-top: 2px;
     }
-    .sidebar-rank {
+
+    /* Editorial sidebar */
+    .editorial-sidebar { padding: 18px 16px; background: #fafafa; }
+    .sidebar-sticky { position: sticky; top: 70px; }
+    .sidebar-card-wrap {
+      background: white; border: 1px solid var(--gray-5);
+      border-radius: 7px; overflow: hidden;
+    }
+    .sidebar-head {
+      background: var(--product-heading-bg); color: white;
+      padding: 9px 13px; display: flex; align-items: center; gap: 8px;
+    }
+    .sidebar-rank-dot {
       background: var(--product-index-bg); color: white;
-      width: 28px; height: 28px; border-radius: 50%;
-      font-size: 12px; font-weight: 700;
+      width: 26px; height: 26px; border-radius: 50%;
+      font-size: 11px; font-weight: 700;
       display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .sidebar-card-title { color: white; font-size: 12px; font-weight: 600; }
-    .sidebar-card-body { padding: 16px; text-align: center; }
-    .sidebar-product-img {
-      width: 130px; height: 130px; object-fit: contain;
-      background: var(--gray-6); border-radius: 7px;
-      padding: 10px; margin: 0 auto 10px; display: block;
+    .sidebar-head-title { color: white; font-size: 12px; font-weight: 600; }
+    .sidebar-body { padding: 14px 16px; text-align: center; }
+    .sidebar-img {
+      width: 120px; height: 120px; object-fit: contain;
+      background: var(--gray-6); border-radius: 6px;
+      padding: 10px; display: block; margin: 0 auto 10px;
     }
-    .sidebar-product-name { font-size: 14px; font-weight: 700; color: var(--gray-1); margin-bottom: 8px; }
-    .sidebar-deal { background: #ff4444; color: white; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 3px; display: inline-block; margin-bottom: 10px; }
-    .sidebar-score-num { font-size: 44px; font-weight: 800; color: var(--product-index-bg); line-height: 1; }
-    .sidebar-score-label { font-size: 11.5px; color: var(--gray-3); margin-bottom: 2px; }
-    .sidebar-stars { color: var(--harvest-gold); font-size: 15px; letter-spacing: 2px; margin: 5px 0 3px; }
-    .sidebar-reviews { font-size: 11.5px; color: var(--gray-3); margin-bottom: 12px; }
-    .sidebar-features {
-      list-style: none; text-align: left; font-size: 12.5px; color: var(--gray-2);
-      margin-bottom: 13px; border-top: 1px solid var(--gray-6); padding-top: 11px;
+    .sidebar-prod-name { font-size: 15px; font-weight: 700; color: var(--gray-1); margin-bottom: 6px; }
+    .sidebar-deal { background: #ff4444; color: white; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 3px; display: inline-block; margin-bottom: 8px; }
+    .sidebar-score-big { font-size: 48px; font-weight: 800; color: #333333; line-height: 1; }
+    .sidebar-score-sub { font-size: 11px; color: var(--gray-3); margin-bottom: 3px; }
+    .sidebar-stars { color: var(--gold); font-size: 16px; letter-spacing: 2px; margin: 4px 0 2px; }
+    .sidebar-review-ct { font-size: 11px; color: var(--gray-3); margin-bottom: 10px; }
+    .sidebar-feats {
+      list-style: none; text-align: left;
+      font-size: 12.5px; color: var(--gray-2);
+      border-top: 1px solid var(--gray-6); padding-top: 10px;
+      margin-bottom: 12px;
     }
-    .sidebar-features li {
-      padding: 3px 0; display: flex; align-items: flex-start; gap: 6px; line-height: 1.4;
+    .sidebar-feats li {
+      padding: 2.5px 0; display: flex; align-items: flex-start;
+      gap: 6px; line-height: 1.4;
     }
-    .sidebar-features li::before { content: "✓"; color: var(--product-index-bg); font-weight: 700; flex-shrink: 0; }
+    .sidebar-feats li::before { content: "✓"; color: var(--product-index-bg); font-weight: 700; flex-shrink: 0; }
     .sidebar-cta {
       display: block; background: var(--product-cta-bg); color: white;
-      text-align: center; padding: 12px; border-radius: 6px;
+      text-align: center; padding: 11px; border-radius: 5px;
       font-weight: 700; font-size: 13px; text-decoration: none !important;
       box-shadow: 0 3px 0 var(--product-cta-shadow);
       transition: background 0.15s, transform 0.1s;
     }
-    .sidebar-cta:hover { background: var(--product-cta-hover-bg); transform: translateY(-1px); }
-    .sidebar-cta-note { font-size: 11px; color: var(--gray-3); margin-top: 6px; }
+    .sidebar-cta:hover { background: var(--product-cta-hover); transform: translateY(-1px); }
+    .sidebar-cta-note { font-size: 10.5px; color: var(--gray-3); margin-top: 6px; }
 
-    /* Score table */
-    .score-table-wrap { margin-top: 18px; }
-    .score-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-    .score-table th {
-      background: var(--product-heading-bg); color: white;
-      padding: 7px 9px; text-align: left; font-weight: 600; font-size: 11.5px;
+    /* Score breakdown bars */
+    .score-bars { margin: 16px 0; }
+    .score-bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .score-bar-label { font-size: 12px; color: var(--gray-2); width: 90px; flex-shrink: 0; }
+    .score-bar-track {
+      flex: 1; height: 7px; background: var(--gray-6);
+      border-radius: 4px; overflow: hidden;
     }
-    .score-table td { padding: 6px 9px; border-bottom: 1px solid var(--gray-6); color: var(--gray-2); }
-    .score-table tr:last-child td { border-bottom: none; }
-    .score-table tr:nth-child(even) td { background: #fafafa; }
-    .score-num { font-weight: 700; color: var(--product-index-bg); }
+    .score-bar-fill { height: 100%; background: var(--product-index-bg); border-radius: 4px; }
+    .score-bar-val { font-size: 12px; font-weight: 700; color: var(--product-index-bg); width: 24px; text-align: right; flex-shrink: 0; }
 
-    /* ── PRODUCT DETAIL CARDS ── */
-    .product-card {
-      background: white; border: 2px solid var(--product-border);
-      border-radius: 8px; overflow: hidden; margin-bottom: 20px;
-    }
-    .product-card-header {
-      background: var(--product-heading-bg); color: white;
-      padding: 13px 22px; display: flex; align-items: center; gap: 14px;
-    }
-    .pc-rank { font-size: 48px; font-weight: 800; line-height: 1; opacity: 0.4; font-style: italic; flex-shrink: 0; }
-    .pc-header-text h2 { font-size: 17px; font-weight: 700; color: white; margin-bottom: 2px; }
-    .pc-header-text .sub { font-size: 12px; opacity: 0.65; color: white; }
-    .product-card-body {
-      padding: 20px; display: grid;
-      grid-template-columns: 185px 1fr; gap: 20px; align-items: start;
-    }
-    .pc-left { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-    .pc-product-img {
-      width: 170px; height: 170px; object-fit: contain;
-      background: var(--gray-6); border-radius: 8px; padding: 10px;
-    }
-    .pc-score { text-align: center; }
-    .pc-score-num { font-size: 38px; font-weight: 800; line-height: 1; color: var(--product-index-bg); }
-    .pc-score-num.s2 { color: var(--product-secondary-index-bg); }
-    .pc-score-num.s3 { color: var(--harvest-gold); }
-    .pc-score-num.s4 { color: var(--rank4); }
-    .pc-score-num.s5 { color: var(--rank5); }
-    .pc-score-out { font-size: 11.5px; color: var(--gray-3); margin-top: 2px; }
-    .pc-stars { color: var(--harvest-gold); font-size: 14px; letter-spacing: 2px; margin-top: 5px; }
-    .pc-review-count { font-size: 11px; color: var(--gray-3); margin-top: 2px; }
-    .pc-rating-label { font-size: 11px; font-weight: 700; color: var(--product-index-bg); margin-top: 3px; }
-    .pc-right h3 { font-size: 17px; font-weight: 700; color: var(--gray-1); margin-bottom: 10px; line-height: 1.3; }
-    .pc-right p { font-size: 13.5px; line-height: 1.75; color: var(--gray-2); margin-bottom: 11px; }
-    .read-more-content { display: none; }
-    .read-more-content.open { display: block; }
-    .read-more-btn {
-      display: inline-flex; align-items: center; gap: 5px;
-      background: var(--gray-6); border: 1px solid var(--gray-5);
-      color: var(--gray-1); font-size: 12.5px; font-weight: 600;
-      padding: 6px 13px; border-radius: 5px; cursor: pointer;
-      margin-bottom: 13px; transition: background 0.15s;
-    }
-    .read-more-btn:hover { background: #e8e8e8; }
-    .read-more-btn .arrow { transition: transform 0.2s; }
-    .read-more-btn.open .arrow { transform: rotate(180deg); }
-    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .pros-cons h4 { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 7px; }
-    .pros h4 { color: var(--product-index-bg); }
-    .cons h4 { color: #e53e3e; }
-    .pros ul, .cons ul { list-style: none; }
-    .pros li, .cons li { font-size: 12.5px; color: var(--gray-2); padding: 3px 0; display: flex; align-items: flex-start; gap: 6px; line-height: 1.4; }
-    .pros li::before { content: "✓"; color: var(--product-index-bg); font-weight: 700; flex-shrink: 0; }
-    .cons li::before { content: "✗"; color: #e53e3e; font-weight: 700; flex-shrink: 0; }
-    .pc-cta { padding: 0 20px 20px; }
-    .pc-cta-btn {
-      display: block; background: var(--product-cta-bg); color: white;
-      text-align: center; padding: 14px 20px; border-radius: 7px;
-      font-weight: 700; font-size: 15px; text-decoration: none !important;
-      box-shadow: 0 4px 0 var(--product-cta-shadow);
-      transition: background 0.15s, transform 0.1s;
-    }
-    .pc-cta-btn:hover { background: var(--product-cta-hover-bg); transform: translateY(-2px); }
-    .pc-cta-btn:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--product-cta-shadow); }
-    .pc-cta-note { text-align: center; font-size: 11.5px; color: var(--gray-3); margin-top: 7px; }
-    .pc-cta-tooltip {
-      display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px;
-      color: #134f6d; background: #f0fafd; border: 1px solid #c9e6f0;
-      border-radius: 4px; padding: 4px 9px; margin-top: 5px;
-    }
-    .pc-deal-row {
-      display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
-    }
-    .pc-deal-badge { background: #ff4444; color: white; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 3px; }
-    .pc-sales-badge { font-size: 12px; color: var(--gray-3); font-style: italic; }
+    /* ── EDITORIAL IMAGES (mid-article) ── */
+    .editorial-img-block { margin: 18px 0; }
+    .editorial-img-block img { width: 100%; border-radius: 5px; display: block; }
+    .editorial-img-block figcaption { font-size: 12px; color: var(--gray-3); margin-top: 5px; font-style: italic; }
 
     /* ── CUSTOMER REVIEWS ── */
     .reviews-section {
       background: white; border: 1px solid var(--gray-5);
-      border-radius: 8px; padding: 20px; margin-bottom: 20px;
+      border-radius: 6px; padding: 20px 22px; margin-bottom: 18px;
     }
-    .reviews-section h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
-    .review-item { padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid var(--gray-6); }
-    .review-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .review-header { display: flex; align-items: center; gap: 9px; margin-bottom: 7px; }
-    .reviewer-avatar { width: 32px; height: 32px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
-    .reviewer-avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .reviewer-name { font-weight: 600; font-size: 13px; }
-    .reviewer-location { font-size: 11px; color: var(--gray-3); }
-    .reviewer-stars { color: var(--harvest-gold); font-size: 12px; margin-top: 1px; }
-    .verified { font-size: 11px; color: var(--gray-3); margin-left: auto; }
-    .review-text { font-size: 13px; color: var(--gray-2); line-height: 1.7; }
+    .reviews-section h2 { font-size: 18px; font-weight: 800; margin-bottom: 16px; }
+    .review-card {
+      background: #fafafa; border: 1px solid #f1f1f1;
+      border-radius: 4px; padding: 20px 24px 16px 20px;
+      margin-bottom: 12px;
+    }
+    .review-card:last-child { margin-bottom: 0; }
+    .review-top { margin-bottom: 7px; }
+    .rev-meta { }
+    .rev-name { font-weight: 700; font-size: 13.5px; color: var(--gray-1); }
+    .rev-loc { font-size: 11.5px; color: var(--gray-3); }
+    .rev-stars { margin-top: 3px; }
+    .rev-text { font-size: 13.5px; color: var(--gray-2); line-height: 1.75; }
 
-    /* ── BOTTOM SUMMARY PICKS ── */
-    .bottom-picks { margin-bottom: 20px; }
-    .bottom-picks h2 { font-size: 19px; font-weight: 700; margin-bottom: 14px; }
-    .bottom-pick-row {
+    /* ── PURCHASE SECTION ── */
+    .purchase-section {
       background: white; border: 1px solid var(--gray-5);
-      border-radius: 7px; padding: 13px 16px;
-      display: grid; grid-template-columns: 38px 88px 1fr auto;
-      gap: 13px; align-items: center; margin-bottom: 7px;
-      transition: box-shadow 0.15s;
+      border-radius: 6px; padding: 20px 22px; margin-bottom: 18px;
     }
-    .bottom-pick-row:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.07); }
-    .bp-rank {
-      width: 32px; height: 32px; border-radius: 50%;
+    .purchase-section h2 { font-size: 18px; font-weight: 800; margin-bottom: 13px; }
+    .purchase-section p { font-size: 14px; line-height: 1.8; color: var(--gray-2); margin-bottom: 11px; }
+    .purchase-section p:last-child { margin-bottom: 0; }
+    .steps-list { list-style: none; margin: 12px 0; }
+    .steps-list li {
+      font-size: 14px; color: var(--gray-2); padding: 6px 0;
+      display: flex; gap: 10px; line-height: 1.5; align-items: flex-start;
+    }
+    .step-num {
       background: var(--product-index-bg); color: white;
-      font-size: 13px; font-weight: 700;
-      display: flex; align-items: center; justify-content: center;
+      width: 22px; height: 22px; border-radius: 50%;
+      font-size: 11px; font-weight: 700; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; margin-top: 1px;
     }
-    .bp-rank.r2 { background: var(--product-secondary-index-bg); }
-    .bp-rank.r3 { background: var(--harvest-gold); }
-    .bp-rank.r4 { background: var(--rank4); }
-    .bp-rank.r5 { background: var(--rank5); }
-    .bp-img { width: 88px; height: 68px; object-fit: contain; background: var(--gray-6); border-radius: 5px; padding: 6px; }
-    .bp-name { font-size: 13.5px; font-weight: 700; color: var(--gray-1); margin-bottom: 3px; }
-    .bp-stars { color: var(--harvest-gold); font-size: 12px; }
-    .bp-score { font-size: 22px; font-weight: 800; color: var(--product-index-bg); text-align: right; }
-    .bp-score.s2 { color: var(--product-secondary-index-bg); }
-    .bp-score.s3 { color: var(--harvest-gold); }
-    .bp-score.s4 { color: var(--rank4); }
-    .bp-score.s5 { color: var(--rank5); }
-    .bp-score span { display: block; font-size: 10.5px; font-weight: 400; color: var(--gray-3); text-align: right; }
-    .bp-cta-col { display: flex; flex-direction: column; gap: 5px; align-items: flex-end; }
-    .bp-cta-btn {
-      display: block; background: var(--product-cta-bg); color: white;
-      padding: 8px 16px; border-radius: 5px; font-weight: 700; font-size: 12px;
-      text-decoration: none !important; white-space: nowrap;
-      box-shadow: 0 2px 0 var(--product-cta-shadow); transition: background 0.15s;
+    .buy-cta-block { margin-top: 16px; text-align: center; }
+    .buy-cta-btn {
+      display: inline-block; background: var(--product-cta-bg);
+      color: white; padding: 13px 32px; border-radius: 6px;
+      font-weight: 700; font-size: 15px; text-decoration: none !important;
+      box-shadow: 0 4px 0 var(--product-cta-shadow);
+      transition: background 0.15s, transform 0.1s;
     }
-    .bp-cta-btn:hover { background: var(--product-cta-hover-bg); }
+    .buy-cta-btn:hover { background: var(--product-cta-hover); transform: translateY(-2px); }
+    .buy-cta-sub { font-size: 11.5px; color: var(--gray-3); margin-top: 7px; }
 
-    /* ── FAQ ── */
-    .faq-section { margin-bottom: 20px; }
-    .faq-section > h2 { font-size: 20px; font-weight: 700; margin-bottom: 13px; }
-    .faq-card {
-      background: white; border: 1px solid var(--gray-5);
-      border-radius: 6px; margin-bottom: 6px; overflow: hidden;
+    /* ── PRODUCT ORDER SUMMARY CARD (bottom Tagsley card) ── */
+    .tagsley-summary-card {
+      background: white; border: 2px solid var(--product-heading-bg);
+      border-radius: 6px; overflow: hidden; margin-bottom: 18px;
     }
-    .faq-q {
-      padding: 13px 17px; font-weight: 600; font-size: 14px; color: var(--gray-1);
-      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
-      background: white; border: none; width: 100%; text-align: left; line-height: 1.4;
+    .tsc-header {
+      background: var(--product-heading-bg); padding: 10px 18px;
+      display: flex; align-items: center; gap: 12px;
     }
-    .faq-q:hover { background: var(--gray-6); }
-    .faq-chevron { font-size: 10px; color: var(--gray-3); transition: transform 0.2s; flex-shrink: 0; margin-left: 12px; }
-    .faq-card.open .faq-chevron { transform: rotate(180deg); }
-    .faq-a {
-      display: none; padding: 0 17px 13px;
-      font-size: 13.5px; color: var(--gray-2); line-height: 1.75;
-      border-top: 1px solid var(--gray-6);
+    .tsc-rank {
+      background: var(--product-index-bg); color: white;
+      width: 34px; height: 34px; border-radius: 50%;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .faq-card.open .faq-a { display: block; }
+    .tsc-title { color: white; font-size: 14px; font-weight: 700; }
+    .tsc-body {
+      display: grid; grid-template-columns: 160px 1fr 190px;
+      gap: 0;
+    }
+    .tsc-img-col {
+      padding: 16px; display: flex; align-items: center; justify-content: center;
+      border-right: 1px solid var(--gray-6);
+    }
+    .tsc-img { width: 130px; height: 130px; object-fit: contain; }
+    .tsc-info-col { padding: 14px 18px; border-right: 1px solid var(--gray-6); }
+    .tsc-prod-name { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+    .tsc-score-col {
+      padding: 14px 16px; display: flex; flex-direction: column;
+      align-items: center; text-align: center; gap: 4px;
+    }
 
     /* ── FOOTER ── */
-    footer { background: var(--product-heading-bg); color: rgba(255,255,255,0.6); padding: 26px 0; margin-top: 24px; }
+    footer {
+      background: #f9f9f9;
+      border-top: 1px solid var(--gray-5);
+      color: var(--gray-2);
+      padding: 26px 0;
+      margin-top: 24px;
+    }
     .footer-inner { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-    .footer-logo { font-size: 16px; font-weight: 700; color: white; margin-bottom: 10px; display: flex; align-items: center; gap: 7px; }
+    .footer-logo-row { display: flex; align-items: center; gap: 7px; margin-bottom: 12px; }
+    .footer-logo-text { font-size: 16px; font-weight: 700; color: var(--gray-1); }
     .footer-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 12px; }
-    .footer-links a { color: rgba(255,255,255,0.5); font-size: 12px; }
-    .footer-links a:hover { color: white; text-decoration: none; }
-    .footer-copy { font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.6; }
+    .footer-links a { color: #4f4f4f; font-size: 12px; }
+    .footer-links a:hover { color: var(--gray-1); text-decoration: underline; }
+    .footer-copy { font-size: 11px; color: #828282; line-height: 1.7; max-width: 720px; }
 
     /* ── RESPONSIVE ── */
-    @media (max-width: 767px) {
-      .picks-grid { grid-template-columns: 1fr; }
-      .adv-grid { grid-template-columns: 1fr; }
-      .adv-sidebar { border-top: 1px solid var(--gray-6); }
-      .product-card-body { grid-template-columns: 1fr; }
-      .pc-left { align-items: center; }
-      .pros-cons { grid-template-columns: 1fr; }
-      .bottom-pick-row { grid-template-columns: 38px 1fr auto; }
-      .bp-img { display: none; }
-      nav { display: none; }
+    @media (max-width: 768px) {
+      .pl-body { grid-template-columns: 1fr; }
+      .pl-img-col { border-right: none; border-bottom: 1px solid var(--gray-6); }
+      .pl-info-col { border-right: none; border-bottom: 1px solid var(--gray-6); }
+      .editorial-inner { grid-template-columns: 1fr; }
+      .editorial-sidebar { border-top: 1px solid var(--gray-6); }
+      .tsc-body { grid-template-columns: 1fr; }
       .hero h1 { font-size: 22px; }
     }
   </style>
@@ -449,708 +458,624 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="/" class="logo">
-      <div class="logo-icon">★</div>
-      <span class="logo-text">PrimePicks<span style="font-weight:400;color:#828282;"> Review</span></span>
-    </a>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Reviews</a>
-      <a href="#">Best Picks</a>
-      <a href="#">Guides</a>
-      <a href="#">About</a>
-    </nav>
+    <img src="https://primepicks.review/wp-content/uploads/PrimePicks_logo_black.svg" alt="PrimePicks Review" class="logo-img"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="logo-text-wrap" style="display:none;">
+      <span class="logo-prime">PrimePicks</span><span class="logo-dot">.</span><span class="logo-review">Review</span>
+    </div>
   </div>
 </header>
 
+
 <!-- HERO -->
-<section class="hero hero--boxed">
+<section class="hero">
   <div class="hero-inner">
-    <div class="breadcrumb">
-      <a href="#">Home</a><span>›</span>
-      <a href="#">Reviews</a><span>›</span>
-      Best Wallet Trackers
-    </div>
     <h1>Best Wallet Trackers of 2025</h1>
-    <div class="hero-subtitle">I've spent three months testing top tracking cards because most solutions completely miss the mark. AirTags are too thick, Tile trackers die when you need them, and subscription trackers drain your bank account.</div>
-    <div class="hero-meta">
+    <div class="hero-author-bar">
       <div class="author-row">
         <div class="author-avatar">
-          <img src="https://placehold.co/36x36/d0d0d0/555?text=BC" alt="Benjamin Chos">
+          <img src="https://primepicks.review/img/ZXhwZXJ0LTQ0LmpwZw.jpg" alt="Benjamin Chos"
+               onerror="this.src='https://placehold.co/34x34/cccccc/555555?text=BC'">
         </div>
         <div>
           <div class="author-name">Benjamin Chos</div>
-          <div class="author-role">Tech Reviewer &amp; Product Tester</div>
+          <div class="author-sub">Tech Reviewer</div>
         </div>
       </div>
       <span class="meta-sep">|</span>
-      <span>Last updated: Feb 22, 2025</span>
+      <span>Last Updated -</span>
       <span class="meta-sep">|</span>
-      <span>🇺🇸 US</span>
+      <span class="flag-us">
+        <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/flag-us.svg" alt="US" style="height:14px;" onerror="this.outerHTML='🇺🇸'">
+        US
+      </span>
       <span class="meta-sep">|</span>
-      <span style="color:var(--product-index-bg);font-weight:600;">✓ Tested &amp; Approved Consumers' Reviews</span>
+      <span class="tested-badge">
+        <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/lets-icons_check-fill.svg" alt="" style="height:14px;" onerror="this.style.display='none'">
+        Tested &amp; Approved Consumers' Reviews
+        <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/rating-stars.svg" alt="stars" style="height:14px;margin-left:3px;" onerror="this.style.display='none'">
+      </span>
     </div>
+    <p class="hero-intro">I've spent three months testing top tracking cards because most solutions completely miss the mark. AirTags are too thick, Tile trackers die when you need them, and subscription trackers drain your bank account. After real-world testing in wallets, laptop bags, purses, and travel pouches, I've found five that actually work anywhere you need them.</p>
   </div>
 </section>
 
 <!-- MAIN -->
 <main>
-  <div class="container" style="padding-top:18px;">
+  <div class="page-wrap">
 
+    <!-- Disclosure -->
     <div class="disclosure">
-      <strong>Advertising Disclosure:</strong> This site accepts advertising compensation from companies which affects how and where products appear on this page. All representations about product information, including pricing, are subject to change at any time.
+      <strong><a href="https://primepicks.review/legal/advertising-disclosure/" style="color:var(--gray-2);">Advertising disclosure</a></strong> — This site accepts advertising compensation from companies which affects how and where products appear on this page.
     </div>
 
-    <!-- TOP 3 PICKS -->
-    <div class="section-label">Our Top 3 Picks</div>
-    <div class="picks-grid">
+    <!-- ═══ PRODUCT LIST ═══ -->
+    <div class="product-list">
 
-      <!-- #1 Tagsley -->
-      <div class="pick-card">
-        <div class="pick-card-header">
-          <div class="rank-badge">#1</div>
-          <div class="pick-card-title">Best Overall</div>
-        </div>
-        <div class="pick-card-body">
-          <img class="pick-img" src="https://placehold.co/240x120/f2f2f2/555?text=Tagsley" alt="Tagsley">
-          <div class="pick-name">Tagsley</div>
-          <div class="pick-rating">
-            <span class="stars">★★★★★</span>
-            <span class="rating-count">9,137 reviews</span>
+      <!-- ── #1 TAGSLEY ── -->
+      <div class="pl-card">
+        <div class="best-choice-banner">Best Choice in 2025</div>
+        <div class="pl-header">
+          <div class="pl-rank-badge">#1</div>
+          <div>
+            <div class="pl-header-title">Tagsley</div>
+            <div class="pl-header-sub">#1 Tracking Card of 2025</div>
           </div>
-          <div class="pick-score-row">
-            <div class="score-pill">9.8</div>
-            <div>
-              <div style="font-size:11.5px;font-weight:700;color:#333;">Our Score</div>
-              <div class="score-label">out of 10</div>
+        </div>
+        <div class="pl-body">
+          <div class="pl-img-col">
+            <img class="pl-product-img" src="https://primepicks.review/img/MV8uanBn.jpg" alt="Tagsley"
+                 onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=Tagsley'">
+          </div>
+          <div class="pl-info-col">
+            <div class="pl-product-name">Tagsley</div>
+            <div class="pros-cons-cols">
+              <div>
+                <div class="pros-label"><span style="color:var(--product-index-bg);">&#10003;</span> Pros</div>
+                <ul class="pros-list">
+                  <li><span class="check-icon">&#10003;</span> Ultra-slim 1.8mm profile</li>
+                  <li><span class="check-icon">&#10003;</span> 5-month battery life</li>
+                  <li><span class="check-icon">&#10003;</span> Fast wireless charging</li>
+                  <li><span class="check-icon">&#10003;</span> Left-behind alerts</li>
+                  <li><span class="check-icon">&#10003;</span> No subscription fees</li>
+                  <li><span class="check-icon">&#10003;</span> IP68 water resistant</li>
+                  <li><span class="check-icon">&#10003;</span> Apple Find My certified</li>
+                  <li><span class="check-icon">&#10003;</span> Global tracking network</li>
+                  <li><span class="check-icon">&#10003;</span> Premium card material</li>
+                  <li><span class="check-icon">&#10003;</span> Loud ring-to-find sound</li>
+                </ul>
+              </div>
+              <div>
+                <div class="cons-label"><span style="color:var(--red);">&#x2717;</span> Cons</div>
+                <ul class="cons-list">
+                  <li><span class="x-icon">&#x2717;</span> Often out of stock due to high demand</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div><span class="deal-badge">70% OFF</span></div>
-          <ul class="pick-features">
-            <li>Ultra-slim 1.8mm profile</li>
-            <li>5-month battery life</li>
-            <li>Fast wireless charging</li>
-            <li>Apple Find My certified</li>
-          </ul>
-          <a href="#" class="btn-cta">Check Best Price ›</a>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">9.8</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-5-stars-1-1-2-6.svg" alt="5 stars"
+                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★★</div>'">
+            <div class="score-rating-word">Excellent</div>
+            <div class="review-count">9,137 Customer Reviews</div>
+            <div class="deal-badge-red">70% Off</div>
+            <div class="ltd-deal-text">Limited Time Deal</div>
+            <div class="sales-proof">2,184 people bought this week</div>
+            <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site</a>
+          </div>
         </div>
       </div>
 
-      <!-- #2 Tile Pro -->
-      <div class="pick-card">
-        <div class="pick-card-header">
-          <div class="rank-badge r2">#2</div>
-          <div class="pick-card-title">Good — Runner Up</div>
-        </div>
-        <div class="pick-card-body">
-          <img class="pick-img" src="https://placehold.co/240x120/f2f2f2/555?text=Tile+Pro" alt="Tile Pro">
-          <div class="pick-name">Tile Pro (by Target)</div>
-          <div class="pick-rating">
-            <span class="stars">★★★★½</span>
-            <span class="rating-count">1,134 reviews</span>
+      <!-- ── #2 TILE PRO ── -->
+      <div class="pl-card">
+        <div class="pl-header">
+          <div class="pl-rank-badge">#2</div>
+          <div>
+            <div class="pl-header-title">Tile Pro (by Target)</div>
+            <div class="pl-header-sub">Score: 8.6 / Good</div>
           </div>
-          <div class="pick-score-row">
-            <div class="score-pill s2">8.6</div>
-            <div>
-              <div style="font-size:11.5px;font-weight:700;color:#333;">Our Score</div>
-              <div class="score-label">out of 10</div>
+        </div>
+        <div class="pl-body">
+          <div class="pl-img-col">
+            <img class="pl-product-img" src="https://primepicks.review/img/Ml8uanBn.jpg" alt="Tile Pro"
+                 onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=Tile+Pro'">
+          </div>
+          <div class="pl-info-col">
+            <div class="pl-product-name">Tile Pro (by Target)</div>
+            <div class="pros-cons-cols">
+              <div>
+                <div class="pros-label"><span style="color:var(--product-index-bg);">&#10003;</span> Pros</div>
+                <ul class="pros-list">
+                  <li><span class="check-icon">&#10003;</span> Replaceable battery</li>
+                  <li><span class="check-icon">&#10003;</span> Wide compatibility</li>
+                  <li><span class="check-icon">&#10003;</span> Community finding network</li>
+                  <li><span class="check-icon">&#10003;</span> Established brand trust</li>
+                </ul>
+              </div>
+              <div>
+                <div class="cons-label"><span style="color:var(--red);">&#x2717;</span> Cons</div>
+                <ul class="cons-list">
+                  <li><span class="x-icon">&#x2717;</span> Weak volume</li>
+                  <li><span class="x-icon">&#x2717;</span> Too thick for modern wallets</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <ul class="pick-features">
-            <li>Replaceable battery</li>
-            <li>Wide compatibility</li>
-            <li>Community finding network</li>
-            <li>Established brand trust</li>
-          </ul>
-          <a href="#" class="btn-cta">Check Best Price ›</a>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">8.6</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-4-half-stars-1-1-1-2-2-2.svg" alt="4.5 stars"
+                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★½</div>'">
+            <div class="score-rating-word s2">Good</div>
+            <div class="review-count">1,134 Customer Reviews</div>
+            <a href="#" class="cta-visit">Visit site</a>
+          </div>
         </div>
       </div>
 
-      <!-- #3 SmartTrack Card -->
-      <div class="pick-card">
-        <div class="pick-card-header">
-          <div class="rank-badge r3">#3</div>
-          <div class="pick-card-title">Good — Budget Pick</div>
-        </div>
-        <div class="pick-card-body">
-          <img class="pick-img" src="https://placehold.co/240x120/f2f2f2/555?text=SmartTrack+Card" alt="SmartTrack Card by Eufy">
-          <div class="pick-name">SmartTrack Card (by Eufy)</div>
-          <div class="pick-rating">
-            <span class="stars">★★★★☆</span>
-            <span class="rating-count">923 reviews</span>
+      <!-- ── #3 SMARTTRACK CARD ── -->
+      <div class="pl-card">
+        <div class="pl-header">
+          <div class="pl-rank-badge">#3</div>
+          <div>
+            <div class="pl-header-title">SmartTrack Card (by Eufy)</div>
+            <div class="pl-header-sub">Score: 8.2 / Good</div>
           </div>
-          <div class="pick-score-row">
-            <div class="score-pill s3">8.2</div>
-            <div>
-              <div style="font-size:11.5px;font-weight:700;color:#333;">Our Score</div>
-              <div class="score-label">out of 10</div>
+        </div>
+        <div class="pl-body">
+          <div class="pl-img-col">
+            <img class="pl-product-img" src="https://primepicks.review/img/M18uanBn.jpg" alt="SmartTrack Card"
+                 onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=SmartTrack'">
+          </div>
+          <div class="pl-info-col">
+            <div class="pl-product-name">SmartTrack Card (by Eufy)</div>
+            <div class="pros-cons-cols">
+              <div>
+                <div class="pros-label"><span style="color:var(--product-index-bg);">&#10003;</span> Pros</div>
+                <ul class="pros-list">
+                  <li><span class="check-icon">&#10003;</span> Affordable price point</li>
+                  <li><span class="check-icon">&#10003;</span> Decent build quality</li>
+                  <li><span class="check-icon">&#10003;</span> Easy setup process</li>
+                  <li><span class="check-icon">&#10003;</span> 3-year battery life</li>
+                </ul>
+              </div>
+              <div>
+                <div class="cons-label"><span style="color:var(--red);">&#x2717;</span> Cons</div>
+                <ul class="cons-list">
+                  <li><span class="x-icon">&#x2717;</span> Non-rechargeable battery</li>
+                  <li><span class="x-icon">&#x2717;</span> Poor location updates</li>
+                  <li><span class="x-icon">&#x2717;</span> Weak alert sound</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <ul class="pick-features">
-            <li>Affordable price point</li>
-            <li>Decent build quality</li>
-            <li>Easy setup process</li>
-            <li>3-year battery life</li>
-          </ul>
-          <a href="#" class="btn-cta">Check Best Price ›</a>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">8.2</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/product-3-rating-2.svg" alt="4 stars"
+                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★☆</div>'">
+            <div class="score-rating-word s2">Good</div>
+            <div class="review-count">923 Customer Reviews</div>
+            <a href="#" class="cta-visit">Visit site</a>
+          </div>
         </div>
       </div>
 
-    </div><!-- /picks-grid -->
+      <!-- ── #4 CARD UNIVERSAL ── -->
+      <div class="pl-card">
+        <div class="pl-header">
+          <div class="pl-rank-badge">#4</div>
+          <div>
+            <div class="pl-header-title">Card Universal (by pebblebee)</div>
+            <div class="pl-header-sub">Score: 7.1 / Average</div>
+          </div>
+        </div>
+        <div class="pl-body">
+          <div class="pl-img-col">
+            <img class="pl-product-img" src="https://primepicks.review/img/NF8uanBn.jpg" alt="Card Universal"
+                 onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=Card+Universal'">
+          </div>
+          <div class="pl-info-col">
+            <div class="pl-product-name">Card Universal (by pebblebee)</div>
+            <div class="pros-cons-cols">
+              <div>
+                <div class="pros-label"><span style="color:var(--product-index-bg);">&#10003;</span> Pros</div>
+                <ul class="pros-list">
+                  <li><span class="check-icon">&#10003;</span> Universal compatibility</li>
+                  <li><span class="check-icon">&#10003;</span> Decent tracking range</li>
+                  <li><span class="check-icon">&#10003;</span> Multiple color options</li>
+                </ul>
+              </div>
+              <div>
+                <div class="cons-label"><span style="color:var(--red);">&#x2717;</span> Cons</div>
+                <ul class="cons-list">
+                  <li><span class="x-icon">&#x2717;</span> Requires special charger</li>
+                  <li><span class="x-icon">&#x2717;</span> No left-behind alerts</li>
+                  <li><span class="x-icon">&#x2717;</span> Cheap material</li>
+                  <li><span class="x-icon">&#x2717;</span> Confusing setup process</li>
+                  <li><span class="x-icon">&#x2717;</span> Not loud enough sound</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">7.1</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/product-4-rating-2.svg" alt="3.5 stars"
+                 onerror="this.outerHTML='<div style=\'color:#e07b22;font-size:16px;\'>★★★½☆</div>'">
+            <div class="score-rating-word s4">Average</div>
+            <div class="review-count">543 Customer Reviews</div>
+            <a href="#" class="cta-visit">Visit site</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- ═══ ADVERTORIAL SECTION ═══ -->
-    <div class="advertorial-wrap">
-      <div class="adv-top-banner">
-        <span class="adv-badge-inline">#1 PICK</span>
+      <!-- ── #5 TRACKING CARD NOMAD ── -->
+      <div class="pl-card">
+        <div class="pl-header">
+          <div class="pl-rank-badge">#5</div>
+          <div>
+            <div class="pl-header-title">Tracking Card (by NOMAD)</div>
+            <div class="pl-header-sub">Score: 6.3 / Average</div>
+          </div>
+        </div>
+        <div class="pl-body">
+          <div class="pl-img-col">
+            <img class="pl-product-img" src="https://primepicks.review/img/NV8uanBn.jpg" alt="Tracking Card by NOMAD"
+                 onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=NOMAD+Card'">
+          </div>
+          <div class="pl-info-col">
+            <div class="pl-product-name">Tracking Card (by NOMAD)</div>
+            <div class="pros-cons-cols">
+              <div>
+                <div class="pros-label"><span style="color:var(--product-index-bg);">&#10003;</span> Pros</div>
+                <ul class="pros-list">
+                  <li><span class="check-icon">&#10003;</span> Premium brand reputation</li>
+                  <li><span class="check-icon">&#10003;</span> Sleek design aesthetic</li>
+                  <li><span class="check-icon">&#10003;</span> Solid construction feel</li>
+                </ul>
+              </div>
+              <div>
+                <div class="cons-label"><span style="color:var(--red);">&#x2717;</span> Cons</div>
+                <ul class="cons-list">
+                  <li><span class="x-icon">&#x2717;</span> Poor tracking precision</li>
+                  <li><span class="x-icon">&#x2717;</span> Weak audio alerts</li>
+                  <li><span class="x-icon">&#x2717;</span> Inconsistent connectivity</li>
+                  <li><span class="x-icon">&#x2717;</span> Limited battery life</li>
+                  <li><span class="x-icon">&#x2717;</span> Overpriced</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">6.3</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/product-5-rating-2.svg" alt="3 stars"
+                 onerror="this.outerHTML='<div style=\'color:#9e7a2b;font-size:16px;\'>★★★☆☆</div>'">
+            <div class="score-rating-word s5">Average</div>
+            <div class="review-count">291 Customer Reviews</div>
+            <a href="#" class="cta-visit">Visit site</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /product-list -->
+
+    <!-- ═══ EDITORIAL SECTION ═══ -->
+    <div class="editorial-wrap">
+      <div class="editorial-banner">
+        <span class="editorial-banner-badge">#1 PICK</span>
         I Bought &amp; Tested the Best-Selling Tracking Cards. Here's Why Tagsley is #1:
       </div>
 
-      <div class="adv-grid">
+      <div class="editorial-inner">
 
-        <!-- LEFT: Article -->
-        <div class="adv-main">
-          <img class="adv-img" src="https://placehold.co/640x255/c8cdd4/444?text=Benjamin+Testing+Wallet+Trackers" alt="Testing tracking cards">
+        <!-- Left: article -->
+        <div class="editorial-main">
 
-          <h2 class="adv-heading">I Bought &amp; Tested the Best-Selling Tracking Cards. Here's Why Tagsley is #1:</h2>
+          <img class="editorial-hero-img"
+               src="https://primepicks.review/img/M19UYWdzbGV5X1RyYWNraW5nLUNhcmQuanBn-w_720.jpg"
+               alt="Testing wallet trackers"
+               onerror="this.src='https://placehold.co/640x240/c8cdd4/444?text=Benjamin+Testing+Wallet+Trackers'">
+
+          <h2 class="editorial-h2">I Bought &amp; Tested the Best-Selling Tracking Cards. Here's Why Tagsley is #1:</h2>
 
           <p>I've always been that person who loses important things at the worst possible moments. Wallet missing before a flight, laptop bag nowhere to be found during a crucial meeting, passport vanishing right before international travel.</p>
 
-          <p>After three emergency replacement situations within six months, I finally decided to do something about it. After real-world testing in wallets, laptop bags, purses, and travel pouches, I've found five that actually work anywhere you need them.</p>
+          <p>After my third "emergency replacement" situation in six months, I decided to finally solve this problem properly. The tracking market is flooded with options, but most are either too thick and bulky for daily use or come with expensive monthly subscriptions that add up fast.</p>
 
-          <p>The card arrived in 3 days, and I was immediately impressed by how genuinely thin it felt — exactly like a credit card. Tagsley uses breakthrough 1.8mm technology that delivers wireless charging and Apple Find My integration without the bulk.</p>
+          <p>Then I discovered Tagsley. With over 12,000 verified reviews and claims about being the thinnest tracker that perfectly does its job, I figured it was worth putting to the test.</p>
 
-          <p>I conducted real-world tests in airports, shopping centers, and public transit. I intentionally hid my wallet in various locations — couch cushions, jacket pockets, car cup holders, and gym bags. Tagsley pinpointed its location within seconds every time. After everyday use including water exposure, I found no signs of wear.</p>
+          <p>The card arrived in 3 days, and I was immediately impressed by how genuinely thin it felt – exactly like a credit card. Everything about the packaging and build quality screamed premium without the premium price tag.</p>
 
-          <h3>What Makes Tagsley Different</h3>
+          <p>Tagsley uses breakthrough 1.8mm technology that delivers wireless charging and Apple "Find My" integration without the bulk that makes other trackers impractical for daily carry.</p>
 
-          <ul class="adv-highlight-list">
-            <li>Complete Apple Find My Integration covering all Apple devices</li>
-            <li>Slim, Discreet Design at 1.8mm — genuine credit card thickness</li>
-            <li>Built to Last — IP68 waterproof and tear-proof construction</li>
-            <li>No interference with credit card functionality</li>
-          </ul>
+          <p>But what really sets Tagsley apart is its versatility. It's ultra-slim, durable, and fits anywhere you need it – wallets, laptop sleeves, passport holders, purses.</p>
 
-          <p>At $43.99 individually — or $34.95 per tracker in a three-card bundle — Tagsley costs a fraction of what you'd spend replacing a lost wallet, passport, or set of keys even once.</p>
+          <p>You don't need to think about it at all, just slip it in and feel more confident knowing it's there.</p>
 
-          <div class="score-table-wrap">
-            <h3>My Full Test Scores</h3>
-            <table class="score-table">
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Tracking</th>
-                  <th>Battery</th>
-                  <th>Network</th>
-                  <th>Setup</th>
-                  <th>Value</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Tagsley</strong></td>
-                  <td>10.0</td><td>9.5</td><td>9.8</td><td>10.0</td><td>10.0</td>
-                  <td><span class="score-num">9.8</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Tile Pro</strong></td>
-                  <td>8.5</td><td>9.0</td><td>8.0</td><td>8.5</td><td>8.0</td>
-                  <td><span class="score-num" style="color:var(--product-secondary-index-bg);">8.6</span></td>
-                </tr>
-                <tr>
-                  <td><strong>SmartTrack (Eufy)</strong></td>
-                  <td>8.0</td><td>9.0</td><td>7.5</td><td>8.5</td><td>8.0</td>
-                  <td><span class="score-num" style="color:var(--harvest-gold);">8.2</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Card Universal (pebblebee)</strong></td>
-                  <td>7.0</td><td>7.5</td><td>7.0</td><td>6.5</td><td>7.5</td>
-                  <td><span class="score-num" style="color:var(--rank4);">7.1</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Tracking Card (NOMAD)</strong></td>
-                  <td>6.5</td><td>6.0</td><td>6.5</td><td>6.5</td><td>5.0</td>
-                  <td><span class="score-num" style="color:var(--rank5);">6.3</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p>After seeing all the praise, I had to put it to the test myself to see if it truly lives up to the hype. Here's what I found.</p>
 
-        <!-- RIGHT: Tagsley sidebar card -->
-        <div class="adv-sidebar">
-          <div class="sidebar-card">
-            <div class="sidebar-card-header">
-              <div class="sidebar-rank">#1</div>
-              <div class="sidebar-card-title">Best Overall Pick</div>
-            </div>
-            <div class="sidebar-card-body">
-              <img class="sidebar-product-img" src="https://placehold.co/130x130/f2f2f2/444?text=Tagsley" alt="Tagsley">
-              <div class="sidebar-product-name">Tagsley</div>
-              <span class="sidebar-deal">70% OFF</span>
-              <div class="sidebar-score-num">9.8</div>
-              <div class="sidebar-score-label">Our Score / 10</div>
-              <div class="sidebar-stars">★★★★★</div>
-              <div class="sidebar-reviews">9,137 customer reviews</div>
-              <ul class="sidebar-features">
-                <li>Ultra-slim 1.8mm profile</li>
-                <li>5-month battery life</li>
-                <li>Fast wireless charging</li>
-                <li>Left-behind alerts</li>
-                <li>No subscription fees</li>
-                <li>IP68 water resistant</li>
-              </ul>
-              <a href="#" class="sidebar-cta">Check Best Price ›</a>
-              <div class="sidebar-cta-note">2,184 people bought this week</div>
-            </div>
-          </div>
-        </div>
+          <h2>My Test Results</h2>
 
-      </div><!-- /adv-grid -->
-    </div><!-- /advertorial-wrap -->
+          <p>As advertised, Tagsley is sleek, slim, and doesn't take up extra space in your wallet.</p>
 
-    <!-- EDITORIAL IMAGE BREAK -->
-    <div style="background:white;border:1px solid var(--gray-5);border-radius:8px;overflow:hidden;margin-bottom:20px;">
-      <img src="https://placehold.co/960x260/c8d0d8/444?text=Real-World+Testing+Photo" alt="Testing wallet trackers" style="width:100%;height:260px;object-fit:cover;display:block;">
-      <div style="padding:14px 22px;">
-        <p style="font-size:13px;color:var(--gray-2);line-height:1.7;margin:0;"><em>Pictured: Testing all five tracking cards across real-world environments — airports, shopping centers, and public transit. The crowd-sourced network test was conducted across three locations over a two-week period.</em></p>
-      </div>
-    </div>
+          <p>I took it with me on a few trips – airports, busy shopping centers, and even crowded public transport. I specifically tested its tracking capabilities in real-world scenarios where losing your wallet could actually happen.</p>
 
-    <!-- ═══ PRODUCT CARDS ═══ -->
+          <p>I intentionally left my wallet in different locations around my house, office, and car to see how quickly and accurately the Find My app could locate it. I tested it hidden under couch cushions, in jacket pockets, car cup holders, and even buried in my gym bag.</p>
 
-    <!-- #1 Tagsley -->
-    <div class="product-card" id="product-1">
-      <div class="product-card-header">
-        <div class="pc-rank">#1</div>
-        <div class="pc-header-text">
-          <h2>Tagsley</h2>
-          <div class="sub">Best Overall Wallet Tracker — Score: 9.8/10 &nbsp;|&nbsp; Excellent</div>
-        </div>
-      </div>
-      <div class="product-card-body">
-        <div class="pc-left">
-          <img class="pc-product-img" src="https://placehold.co/170x170/f2f2f2/444?text=Tagsley" alt="Tagsley">
-          <div class="pc-score">
-            <div class="pc-score-num">9.8</div>
-            <div class="pc-score-out">Our Score / 10</div>
-            <div class="pc-stars">★★★★★</div>
-            <div class="pc-review-count">9,137 reviews</div>
-            <div class="pc-rating-label">Excellent</div>
-          </div>
-        </div>
-        <div class="pc-right">
-          <div class="pc-deal-row">
-            <span class="pc-deal-badge">70% OFF</span>
-            <span class="pc-sales-badge">2,184 people bought this week</span>
-          </div>
-          <h3>Tagsley — The Best Wallet Tracker for 2025</h3>
-          <p>Tagsley uses breakthrough 1.8mm technology that delivers wireless charging and Apple Find My integration without the bulk. The card arrived in 3 days, and I was immediately impressed by how genuinely thin it felt — exactly like a credit card.</p>
-          <p>I tested it in airports, shopping centers, and public transit. I intentionally hid my wallet in various locations and Tagsley pinpointed its location within seconds every time. After everyday use including water exposure, I found no signs of wear.</p>
-          <div class="read-more-content" id="rm1">
-            <p>Priced at $43.99 individually — or $34.95 per tracker in a three-card bundle — Tagsley costs a fraction of what you'd spend replacing a lost wallet, passport, or set of keys even once. It's sold exclusively online to maintain affordability, and the discount is applied automatically at checkout without entering a code.</p>
-          </div>
-          <button class="read-more-btn" onclick="toggleReadMore('rm1',this)">Read More <span class="arrow">▼</span></button>
-          <div class="pros-cons">
-            <div class="pros">
-              <h4>Pros</h4>
-              <ul>
-                <li>Ultra-slim 1.8mm profile</li>
-                <li>5-month battery life</li>
-                <li>Fast wireless charging</li>
-                <li>Left-behind alerts</li>
-                <li>No subscription fees</li>
-                <li>IP68 water resistant</li>
-                <li>Apple Find My certified</li>
-                <li>Global tracking network</li>
-                <li>Premium card material</li>
-                <li>Loud ring-to-find sound</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h4>Cons</h4>
-              <ul>
-                <li>Often out of stock due to high demand</li>
-              </ul>
+          <p>The precision was impressive. Whether my wallet was in obvious places or completely hidden, Tagsley pinpointed its location within seconds. The sound feature worked perfectly too – loud enough to hear through fabric and from reasonable distances, but not embarrassingly loud in quiet places.</p>
+
+          <p>That's when I knew Tagsley's Apple Find My integration was doing exactly what it promised.</p>
+
+          <p>Now, let's talk about durability.</p>
+
+          <p>Since Tagsley is meant to stay in your wallet, I didn't push it to extremes, but I did test it in real-world situations. I tossed it in and out of my wallet, carried it around in different pockets, threw it into bags a couple of times, and even got it wet.</p>
+
+          <p>After all that, it's still in excellent condition. It holds up to everyday use without any signs of wear, which is exactly what you need from a product that's protecting your most important cards.</p>
+
+          <p>In the end, Tagsley passed all my tests with flying colors. It's simple, effective, and offers exactly what you expect from an ultra-slim tracking card.</p>
+
+          <p>Still, I had some other tracking cards to test, so let's see how they compare.</p>
+
+          <h2>The Results:</h2>
+
+          <ol class="results-list">
+            <li>
+              <span class="results-num">1</span>
+              <span><strong>Complete Apple Find My Integration:</strong> While most competitors only offer basic tracking features, Tagsley's Find My network covers all Apple devices including iPhones, iPads, MacBooks, AirPods, Apple Watches, and more. The best part is that only one card is needed to track it all through Apple's massive device network.</span>
+            </li>
+            <li>
+              <span class="results-num">2</span>
+              <span><strong>Slim, Discreet Design:</strong> A common complaint I had with other cards is that they're chunky and often interfere with other cards in your wallet, despite being advertised as slim. Tagsley, however, is ultra-slim at just 1.8mm thick and fits seamlessly with the rest of my cards without adding bulk.</span>
+            </li>
+            <li>
+              <span class="results-num">3</span>
+              <span><strong>Built to Last:</strong> Tagsley is waterproof, tear-proof, and stays in great condition even when exposed to everyday use. In contrast, many other tracker cards I tested showed signs of damage after just a few weeks.</span>
+            </li>
+            <li>
+              <span class="results-num">4</span>
+              <span><strong>Doesn't Interfere with Card Functionality:</strong> After using other trackers, I noticed some of my cards didn't work properly after being stored next to them for a while. With Tagsley, I didn't have any issues. My credit cards and IDs work exactly like they should when I need them.</span>
+            </li>
+          </ol>
+
+          <p>Out of the 10 tracking cards I've tested, Tagsley is my #1 pick. It's sleek, it tracks everything perfectly, and you can just set it and forget it.</p>
+
+          <figure class="editorial-img-block">
+            <img src="https://primepicks.review/img/NF9UYWdzbGV5X1RyYWNraW5nLUNhcmQuanBn-w_720.jpg"
+                 alt="Tagsley wallet tracker"
+                 onerror="this.src='https://placehold.co/640x300/c8cdd4/444?text=Tagsley+In+Use'">
+            <figcaption>Tagsley tracking card in a real-world wallet — slim enough to sit alongside regular cards without any bulk.</figcaption>
+          </figure>
+
+          <h2>Value</h2>
+
+          <p>When it comes to keeping track of your most important belongings, Tagsley offers incredible value.</p>
+
+          <p>At $43.99 for a single card, it's reasonable considering what it protects. If you want to cover multiple items, the 3-card bundle brings it down to $34.95 per tracker.</p>
+
+          <p>I've had friends lose their wallets while traveling. My buddy Brandon spent $400 just on emergency document fees when his passport went missing in Barcelona. Between replacement cards, emergency cash transfers, and the sheer panic, it's a nightmare I never want to experience.</p>
+
+          <p>If you occasionally leave things behind in places (coffee shops, Ubers, hotel rooms), having that backup plan just makes sense.</p>
+
+          <p>The peace of mind is worth more than the cost.</p>
+
+          <h2>Never Lose Anything Important Again</h2>
+
+          <p>At the heart of Tagsley is its advanced Apple Find My integration, designed to locate your belongings anywhere in the world using Apple's vast network. This technology creates an ultra-wide, invisible network that instantly pinpoints your items no matter where they are.</p>
+
+          <p>But Tagsley isn't just for wallets.</p>
+
+          <p>It protects all your important items, including laptop bags, passport holders, purses, and even luggage.</p>
+
+          <p>What's even better is that it works silently and efficiently without interfering with your phone, Wi-Fi, or other devices. The tracking works seamlessly with iPhones through the Apple Find My app, leveraging Apple's vast network of devices worldwide. So you don't need to worry about connectivity issues or battery drain on your phone.</p>
+
+          <p>Tagsley gives you the ultimate peace of mind against losing your most valuable possessions, all without the hassle.</p>
+
+        </div><!-- /editorial-main -->
+
+        <!-- Right: sidebar -->
+        <div class="editorial-sidebar">
+          <div class="sidebar-sticky">
+            <div class="sidebar-card-wrap">
+              <div class="sidebar-head">
+                <div class="sidebar-rank-dot">#1</div>
+                <div class="sidebar-head-title">#1 Tracking Card in 2025</div>
+              </div>
+              <div class="sidebar-body">
+                <img class="sidebar-img"
+                     src="https://primepicks.review/img/MV8uanBn.jpg"
+                     alt="Tagsley"
+                     onerror="this.src='https://placehold.co/120x120/f2f2f2/555?text=Tagsley'">
+                <div class="sidebar-prod-name">Tagsley</div>
+                <span class="sidebar-deal">70% OFF</span>
+                <div class="sidebar-score-big">9.8</div>
+                <div class="sidebar-score-sub">Our Score / 10</div>
+                <div class="sidebar-stars">★★★★★</div>
+                <div class="sidebar-review-ct">9,137 customer reviews</div>
+
+                <div class="score-bars">
+                  <div class="score-bar-row">
+                    <span class="score-bar-label">Quality</span>
+                    <div class="score-bar-track"><div class="score-bar-fill" style="width:100%;"></div></div>
+                    <span class="score-bar-val">10</span>
+                  </div>
+                  <div class="score-bar-row">
+                    <span class="score-bar-label">Easy to Use</span>
+                    <div class="score-bar-track"><div class="score-bar-fill" style="width:100%;"></div></div>
+                    <span class="score-bar-val">10</span>
+                  </div>
+                  <div class="score-bar-row">
+                    <span class="score-bar-label">Price</span>
+                    <div class="score-bar-track"><div class="score-bar-fill" style="width:90%;"></div></div>
+                    <span class="score-bar-val">9</span>
+                  </div>
+                  <div class="score-bar-row">
+                    <span class="score-bar-label">Support</span>
+                    <div class="score-bar-track"><div class="score-bar-fill" style="width:90%;"></div></div>
+                    <span class="score-bar-val">9</span>
+                  </div>
+                </div>
+
+                <ul class="sidebar-feats">
+                  <li>Ultra-slim 1.8mm profile</li>
+                  <li>5-month battery life</li>
+                  <li>Fast wireless charging</li>
+                  <li>Left-behind alerts</li>
+                  <li>No subscription fees</li>
+                  <li>IP68 water resistant</li>
+                  <li>Apple Find My certified</li>
+                  <li>Global tracking network</li>
+                </ul>
+                <a href="https://tagsleyshop.com/pp/us/" class="sidebar-cta">Click Here to Get 70%</a>
+                <div class="sidebar-cta-note">2,184 people bought this week</div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="pc-cta">
-        <a href="#" class="pc-cta-btn">Check Best Price ›</a>
-        <div class="pc-cta-note">3-day delivery &nbsp;•&nbsp; Discount applied automatically at checkout</div>
-        <div style="text-align:center;margin-top:5px;">
-          <span class="pc-cta-tooltip">🔒 Secure checkout &nbsp;•&nbsp; Sold exclusively online</span>
-        </div>
-      </div>
-    </div>
+        </div><!-- /editorial-sidebar -->
 
-    <!-- #2 Tile Pro -->
-    <div class="product-card" id="product-2">
-      <div class="product-card-header">
-        <div class="pc-rank">#2</div>
-        <div class="pc-header-text">
-          <h2>Tile Pro (by Target)</h2>
-          <div class="sub">Score: 8.6/10 &nbsp;|&nbsp; Good — Replaceable Battery &amp; Wide Compatibility</div>
-        </div>
-      </div>
-      <div class="product-card-body">
-        <div class="pc-left">
-          <img class="pc-product-img" src="https://placehold.co/170x170/f2f2f2/444?text=Tile+Pro" alt="Tile Pro">
-          <div class="pc-score">
-            <div class="pc-score-num s2">8.6</div>
-            <div class="pc-score-out">Our Score / 10</div>
-            <div class="pc-stars">★★★★½</div>
-            <div class="pc-review-count">1,134 reviews</div>
-            <div class="pc-rating-label" style="color:var(--product-secondary-index-bg);">Good</div>
-          </div>
-        </div>
-        <div class="pc-right">
-          <h3>Tile Pro — Good Runner-Up with Replaceable Battery</h3>
-          <p>The Tile Pro is an established and trusted tracker with a replaceable battery and wide platform compatibility. It integrates with both iOS and Android through the Tile app and benefits from a large community finding network built over many years.</p>
-          <p>In my testing, the Tile Pro performed reliably for basic wallet tracking. However, its biggest drawbacks became immediately apparent: the alarm volume is noticeably weaker than Tagsley, and its thickness makes it uncomfortable in modern slim wallets.</p>
-          <div class="read-more-content" id="rm2">
-            <p>If you already own Tile devices and are happy with the ecosystem, the Tile Pro remains a solid choice. However, for new buyers, the thinner form factor and superior network of Tagsley offer a meaningfully better experience.</p>
-          </div>
-          <button class="read-more-btn" onclick="toggleReadMore('rm2',this)">Read More <span class="arrow">▼</span></button>
-          <div class="pros-cons">
-            <div class="pros">
-              <h4>Pros</h4>
-              <ul>
-                <li>Replaceable battery</li>
-                <li>Wide compatibility</li>
-                <li>Community finding network</li>
-                <li>Established brand trust</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h4>Cons</h4>
-              <ul>
-                <li>Weak volume</li>
-                <li>Too thick for modern wallets</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pc-cta">
-        <a href="#" class="pc-cta-btn" style="background:#00A0B6;box-shadow:0 4px 0 #007d8f;">Check Best Price ›</a>
-        <div class="pc-cta-note">Available at Target and major retailers</div>
-      </div>
-    </div>
+      </div><!-- /editorial-inner -->
+    </div><!-- /editorial-wrap -->
 
-    <!-- #3 SmartTrack Card -->
-    <div class="product-card" id="product-3">
-      <div class="product-card-header">
-        <div class="pc-rank">#3</div>
-        <div class="pc-header-text">
-          <h2>SmartTrack Card (by Eufy)</h2>
-          <div class="sub">Score: 8.2/10 &nbsp;|&nbsp; Good — Affordable Budget Pick</div>
-        </div>
-      </div>
-      <div class="product-card-body">
-        <div class="pc-left">
-          <img class="pc-product-img" src="https://placehold.co/170x170/f2f2f2/444?text=SmartTrack+Card" alt="SmartTrack Card">
-          <div class="pc-score">
-            <div class="pc-score-num s3">8.2</div>
-            <div class="pc-score-out">Our Score / 10</div>
-            <div class="pc-stars">★★★★☆</div>
-            <div class="pc-review-count">923 reviews</div>
-            <div class="pc-rating-label" style="color:var(--harvest-gold);">Good</div>
-          </div>
-        </div>
-        <div class="pc-right">
-          <h3>SmartTrack Card (Eufy) — Best Budget Option</h3>
-          <p>The SmartTrack Card by Eufy is the most affordable option in the category that still delivers reliable performance. Setup is straightforward through the Eufy Security app, and the 3-year battery life is genuinely impressive for the price point.</p>
-          <p>The main weaknesses showed up clearly in real-world testing: location updates were noticeably slower than the top picks, and the alert sound is too quiet to be practical in a noisy environment like a shopping center or airport.</p>
-          <div class="read-more-content" id="rm3">
-            <p>If you're on a tight budget and primarily use your tracker at home, the SmartTrack Card is a decent option. But if you need reliable tracking in busy public places, step up to the Tagsley.</p>
-          </div>
-          <button class="read-more-btn" onclick="toggleReadMore('rm3',this)">Read More <span class="arrow">▼</span></button>
-          <div class="pros-cons">
-            <div class="pros">
-              <h4>Pros</h4>
-              <ul>
-                <li>Affordable price point</li>
-                <li>Decent build quality</li>
-                <li>Easy setup process</li>
-                <li>3-year battery life</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h4>Cons</h4>
-              <ul>
-                <li>Non-rechargeable battery</li>
-                <li>Poor location updates</li>
-                <li>Weak alert sound</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pc-cta">
-        <a href="#" class="pc-cta-btn" style="background:#dd9302;box-shadow:0 4px 0 #b07502;">Check Best Price ›</a>
-        <div class="pc-cta-note">Available at Amazon and major electronics retailers</div>
-      </div>
-    </div>
-
-    <!-- #4 Card Universal -->
-    <div class="product-card" id="product-4" style="border-color:#e07b22;">
-      <div class="product-card-header">
-        <div class="pc-rank">#4</div>
-        <div class="pc-header-text">
-          <h2>Card Universal (by pebblebee)</h2>
-          <div class="sub">Score: 7.1/10 &nbsp;|&nbsp; Average</div>
-        </div>
-      </div>
-      <div class="product-card-body">
-        <div class="pc-left">
-          <img class="pc-product-img" src="https://placehold.co/170x170/f2f2f2/444?text=Card+Universal" alt="Card Universal by pebblebee">
-          <div class="pc-score">
-            <div class="pc-score-num s4">7.1</div>
-            <div class="pc-score-out">Our Score / 10</div>
-            <div class="pc-stars" style="color:#e07b22;">★★★½☆</div>
-            <div class="pc-review-count">543 reviews</div>
-            <div class="pc-rating-label" style="color:var(--rank4);">Average</div>
-          </div>
-        </div>
-        <div class="pc-right">
-          <h3>Card Universal (pebblebee) — Average Performer</h3>
-          <p>The Card Universal by pebblebee offers universal platform compatibility and multiple color options. It has a decent tracking range for basic scenarios, but several significant issues held it back in my testing.</p>
-          <p>The setup process was unnecessarily confusing compared to any other tracker I tested. The proprietary charger is a frustrating requirement. The plastic material feels notably cheaper than competing products at a similar price point, and the absence of left-behind alerts is a meaningful missing feature.</p>
-          <div class="pros-cons">
-            <div class="pros">
-              <h4>Pros</h4>
-              <ul>
-                <li>Universal compatibility</li>
-                <li>Decent tracking range</li>
-                <li>Multiple color options</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h4>Cons</h4>
-              <ul>
-                <li>Requires special charger</li>
-                <li>No left-behind alerts</li>
-                <li>Cheap material feel</li>
-                <li>Confusing setup process</li>
-                <li>Not loud enough sound</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pc-cta">
-        <a href="#" class="pc-cta-btn" style="background:var(--rank4);box-shadow:0 4px 0 #b56219;">Check Best Price ›</a>
-      </div>
-    </div>
-
-    <!-- #5 Tracking Card NOMAD -->
-    <div class="product-card" id="product-5" style="border-color:#9e7a2b;">
-      <div class="product-card-header">
-        <div class="pc-rank">#5</div>
-        <div class="pc-header-text">
-          <h2>Tracking Card (by NOMAD)</h2>
-          <div class="sub">Score: 6.3/10 &nbsp;|&nbsp; Average</div>
-        </div>
-      </div>
-      <div class="product-card-body">
-        <div class="pc-left">
-          <img class="pc-product-img" src="https://placehold.co/170x170/f2f2f2/444?text=NOMAD+Card" alt="Tracking Card by NOMAD">
-          <div class="pc-score">
-            <div class="pc-score-num s5">6.3</div>
-            <div class="pc-score-out">Our Score / 10</div>
-            <div class="pc-stars" style="color:#9e7a2b;">★★★☆☆</div>
-            <div class="pc-review-count">291 reviews</div>
-            <div class="pc-rating-label" style="color:var(--rank5);">Average</div>
-          </div>
-        </div>
-        <div class="pc-right">
-          <h3>Tracking Card (NOMAD) — Premium Price, Below-Average Performance</h3>
-          <p>NOMAD has a strong reputation for premium build quality, and the Tracking Card does look and feel well-made. The sleek design aesthetic is genuinely attractive. However, the actual tracking performance fell well short of its price tag in my testing.</p>
-          <p>Tracking precision was inconsistent — the card would sometimes fail to update its location even when well within network range. Audio alerts are too quiet for practical use in public spaces. For the premium price NOMAD charges, these limitations are hard to justify when Tagsley delivers significantly better performance for less money.</p>
-          <div class="pros-cons">
-            <div class="pros">
-              <h4>Pros</h4>
-              <ul>
-                <li>Premium brand reputation</li>
-                <li>Sleek design aesthetic</li>
-                <li>Solid construction feel</li>
-              </ul>
-            </div>
-            <div class="cons">
-              <h4>Cons</h4>
-              <ul>
-                <li>Poor tracking precision</li>
-                <li>Weak audio alerts</li>
-                <li>Inconsistent connectivity</li>
-                <li>Limited battery life</li>
-                <li>Overpriced</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pc-cta">
-        <a href="#" class="pc-cta-btn" style="background:var(--rank5);box-shadow:0 4px 0 #7a5d21;">Check Best Price ›</a>
-      </div>
-    </div>
-
-    <!-- CUSTOMER REVIEWS -->
+    <!-- ═══ CUSTOMER REVIEWS ═══ -->
     <div class="reviews-section">
       <h2>Customer Reviews</h2>
 
-      <div class="review-item">
-        <div class="review-header">
-          <div class="reviewer-avatar"><img src="https://placehold.co/32x32/d0d0d0/555?text=JH" alt="Jake Hernandez"></div>
-          <div>
-            <div class="reviewer-name">Jake Hernandez</div>
-            <div class="reviewer-location">New Hampshire</div>
-            <div class="reviewer-stars">★★★★★</div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="rev-meta">
+            <div class="rev-name">Jake Hernandez</div>
+            <div class="rev-loc">New Hampshire</div>
+            <div class="rev-stars">
+              <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
+            </div>
           </div>
-          <span class="verified">✓ Verified Purchase</span>
         </div>
-        <p class="review-text">"I've been using Tagsley for about 4 months now, and it's already saved me twice. Once when I left my wallet at a restaurant (Find My showed exactly which table), and another time when it slipped between my car seats."</p>
+        <p class="rev-text">I've been using Tagsley for about 4 months now, and it's already saved me twice. Once when I left my wallet at a restaurant (Find My showed exactly which table), and another time when it slipped between my car seats. The battery life is exactly as advertised. I charge it maybe once every few months. Worth every penny for the peace of mind.</p>
       </div>
 
-      <div class="review-item">
-        <div class="review-header">
-          <div class="reviewer-avatar"><img src="https://placehold.co/32x32/d0d0d0/555?text=HS" alt="Hannah Stevens"></div>
-          <div>
-            <div class="reviewer-name">Hannah Stevens</div>
-            <div class="reviewer-location">Oregon</div>
-            <div class="reviewer-stars">★★★★★</div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="rev-meta">
+            <div class="rev-name">Hannah Stevens</div>
+            <div class="rev-loc">Oregon</div>
+            <div class="rev-stars">
+              <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
+            </div>
           </div>
-          <span class="verified">✓ Verified Purchase</span>
         </div>
-        <p class="review-text">"i lost my purse at the mall last week and was freaking out because it had everything in it… credit cards, ID, cash, everything. i used the app and found it in like 5 minutes at the food court."</p>
+        <p class="rev-text">i lost my purse at the mall last week and was freaking out because it had everything in it… credit cards, ID, cash, everything. i used the app and found it in like 5 minutes at the food court where i forgot it. my friends think im paranoid for putting a tracker in my wallet but hey, better safe than sorry and who was right, right?</p>
       </div>
 
-      <div class="review-item">
-        <div class="review-header">
-          <div class="reviewer-avatar"><img src="https://placehold.co/32x32/d0d0d0/555?text=DF" alt="Dana Fahrsted"></div>
-          <div>
-            <div class="reviewer-name">Dana Fahrsted</div>
-            <div class="reviewer-location">Georgia</div>
-            <div class="reviewer-stars">★★★★★</div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="rev-meta">
+            <div class="rev-name">Dana Fahrsted</div>
+            <div class="rev-loc">Georgia</div>
+            <div class="rev-stars">
+              <img src="https://primepicks.review/wp-content/uploads/Testimonials-stars-icons-7-4-1-1.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
+            </div>
           </div>
-          <span class="verified">✓ Verified Purchase</span>
         </div>
-        <p class="review-text">"I'm someone who misplaces things alot and this has already saved me twice – once when my wallet slipped between car seats and another time when I left it at restaurant."</p>
+        <p class="rev-text">I'm someone who misplaces things alot and this has already saved me twice – once when my wallet slipped between car seats and another time when I left it at restaurant. No complaints 5/5</p>
       </div>
 
     </div>
 
-    <!-- BOTTOM SUMMARY PICKS -->
-    <div class="bottom-picks">
-      <h2>Our Final Recommendations &amp; Top Picks</h2>
-
-      <div class="bottom-pick-row">
-        <div class="bp-rank">#1</div>
-        <img class="bp-img" src="https://placehold.co/88x68/f2f2f2/555?text=Tagsley" alt="Tagsley">
-        <div class="bp-info">
-          <div class="bp-name">Tagsley — Best Overall <span style="background:#ff4444;color:white;font-size:10px;font-weight:700;padding:2px 6px;border-radius:2px;margin-left:5px;">70% OFF</span></div>
-          <div class="bp-stars">★★★★★ &nbsp;<span style="font-size:11px;color:#828282;">9,137 reviews</span></div>
-        </div>
-        <div class="bp-cta-col">
-          <div class="bp-score">9.8<span>Our Score</span></div>
-          <a href="#" class="bp-cta-btn">Check Price ›</a>
-        </div>
-      </div>
-
-      <div class="bottom-pick-row">
-        <div class="bp-rank r2">#2</div>
-        <img class="bp-img" src="https://placehold.co/88x68/f2f2f2/555?text=Tile+Pro" alt="Tile Pro">
-        <div class="bp-info">
-          <div class="bp-name">Tile Pro (by Target) — Good</div>
-          <div class="bp-stars">★★★★½ &nbsp;<span style="font-size:11px;color:#828282;">1,134 reviews</span></div>
-        </div>
-        <div class="bp-cta-col">
-          <div class="bp-score s2">8.6<span>Our Score</span></div>
-          <a href="#" class="bp-cta-btn">Check Price ›</a>
-        </div>
-      </div>
-
-      <div class="bottom-pick-row">
-        <div class="bp-rank r3">#3</div>
-        <img class="bp-img" src="https://placehold.co/88x68/f2f2f2/555?text=SmartTrack" alt="SmartTrack Card">
-        <div class="bp-info">
-          <div class="bp-name">SmartTrack Card (by Eufy) — Good</div>
-          <div class="bp-stars">★★★★☆ &nbsp;<span style="font-size:11px;color:#828282;">923 reviews</span></div>
-        </div>
-        <div class="bp-cta-col">
-          <div class="bp-score s3">8.2<span>Our Score</span></div>
-          <a href="#" class="bp-cta-btn">Check Price ›</a>
-        </div>
-      </div>
-
-      <div class="bottom-pick-row">
-        <div class="bp-rank r4">#4</div>
-        <img class="bp-img" src="https://placehold.co/88x68/f2f2f2/555?text=pebblebee" alt="Card Universal">
-        <div class="bp-info">
-          <div class="bp-name">Card Universal (by pebblebee) — Average</div>
-          <div class="bp-stars" style="color:#e07b22;">★★★½☆ &nbsp;<span style="font-size:11px;color:#828282;">543 reviews</span></div>
-        </div>
-        <div class="bp-cta-col">
-          <div class="bp-score s4">7.1<span>Our Score</span></div>
-          <a href="#" class="bp-cta-btn">Check Price ›</a>
-        </div>
-      </div>
-
-      <div class="bottom-pick-row">
-        <div class="bp-rank r5">#5</div>
-        <img class="bp-img" src="https://placehold.co/88x68/f2f2f2/555?text=NOMAD" alt="Tracking Card NOMAD">
-        <div class="bp-info">
-          <div class="bp-name">Tracking Card (by NOMAD) — Average</div>
-          <div class="bp-stars" style="color:#9e7a2b;">★★★☆☆ &nbsp;<span style="font-size:11px;color:#828282;">291 reviews</span></div>
-        </div>
-        <div class="bp-cta-col">
-          <div class="bp-score s5">6.3<span>Our Score</span></div>
-          <a href="#" class="bp-cta-btn">Check Price ›</a>
-        </div>
-      </div>
-
+    <!-- ═══ PURCHASE + WHERE TO BUY ═══ -->
+    <div class="purchase-section">
+      <h2>Purchase and Delivery Process</h2>
+      <p>Getting Tagsley is really simple.</p>
+      <p>Since Tagsley is sold exclusively online, you're getting it at an affordable price without the markups you'd find in stores.</p>
+      <p>I placed my order at the start of the week, and to my surprise, it <strong>arrived just 3 days later</strong>. This was the fastest delivery out of all the products I've tested!</p>
+      <p>And the discount was already applied at checkout, so there was no need to mess around with typing in discount codes or searching for deals. It was all done for me, which made the whole process even easier.</p>
     </div>
 
-    <!-- FAQ -->
-    <div class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-
-      <div class="faq-card">
-        <button class="faq-q" onclick="toggleFaq(this)">What is a wallet tracker card?<span class="faq-chevron">▼</span></button>
-        <div class="faq-a"><p>A wallet tracker card is a thin Bluetooth or UWB device the same size and shape as a credit card that fits inside your wallet. When you misplace your wallet, you use a smartphone app to make the card emit a sound, or use the network to find its last known location on a map.</p></div>
+    <!-- WHERE TO BUY -->
+    <div class="purchase-section">
+      <h2>Where Can I Buy the Tagsley Tracking Card?</h2>
+      <p>Getting your own Tagsley with a 70% discount is simple. Just follow these steps:</p>
+      <ol class="steps-list">
+        <li><span class="step-num">1</span> Go to the official Tagsley website;</li>
+        <li><span class="step-num">2</span> Choose the number of Tagsley cards you want;</li>
+        <li><span class="step-num">3</span> Enter your shipping and payment details;</li>
+        <li><span class="step-num">4</span> Confirm your order and enjoy knowing your belongings are safe and trackable!</li>
+      </ol>
+      <div class="buy-cta-block">
+        <a href="https://tagsleyshop.com/pp/us/" class="buy-cta-btn">Click Here to Get 70%</a>
+        <div class="buy-cta-sub">Limited stock available. Discount applied automatically at checkout.</div>
       </div>
-
-      <div class="faq-card">
-        <button class="faq-q" onclick="toggleFaq(this)">How is Tagsley different from an AirTag?<span class="faq-chevron">▼</span></button>
-        <div class="faq-a"><p>AirTags are circular and require a separate wallet holder, adding bulk. Tagsley is a true credit-card form factor at 1.8mm — thinner than most cards already in your wallet. It also includes wireless charging and no subscription fees, whereas AirTag accessories add cost and complexity.</p></div>
-      </div>
-
-      <div class="faq-card">
-        <button class="faq-q" onclick="toggleFaq(this)">Does Tagsley require a subscription?<span class="faq-chevron">▼</span></button>
-        <div class="faq-a"><p>No. Tagsley has no subscription fees. Unlike some competitors that lock key features behind a monthly subscription, all of Tagsley's features — including left-behind alerts, location history, and the global tracking network — are available with no recurring charges.</p></div>
-      </div>
-
-      <div class="faq-card">
-        <button class="faq-q" onclick="toggleFaq(this)">How long does the Tagsley battery last?<span class="faq-chevron">▼</span></button>
-        <div class="faq-a"><p>Tagsley's battery lasts approximately 5 months on a single charge, and it recharges wirelessly — no cables needed. Simply place it on any Qi wireless charging pad and it will be fully charged in a few hours.</p></div>
-      </div>
-
-      <div class="faq-card">
-        <button class="faq-q" onclick="toggleFaq(this)">How much does Tagsley cost?<span class="faq-chevron">▼</span></button>
-        <div class="faq-a"><p>Tagsley costs $43.99 for a single card. If you buy a 3-card bundle, the price drops to $34.95 per card. The current 70% discount is applied automatically at checkout — no coupon code needed. Tagsley is sold exclusively online to keep costs down.</p></div>
-      </div>
-
     </div>
 
-  </div><!-- /container -->
+    <!-- Bottom Tagsley Card -->
+    <div class="pl-card" style="margin-bottom:0;">
+      <div class="best-choice-banner">Limited Time Deal: 70% Off</div>
+      <div class="pl-header">
+        <div class="pl-rank-badge">#1</div>
+        <div>
+          <div class="pl-header-title">Tagsley</div>
+          <div class="pl-header-sub">#1 Tracking Card of 2025</div>
+        </div>
+      </div>
+      <div class="pl-body">
+        <div class="pl-img-col">
+          <img class="pl-product-img" src="https://primepicks.review/img/MV8uanBn.jpg" alt="Tagsley"
+               onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=Tagsley'">
+        </div>
+        <div class="pl-info-col">
+          <div class="pl-product-name">Tagsley</div>
+          <div class="pros-cons-cols">
+            <div>
+              <div class="pros-label"><span style="color:var(--product-index-bg);">&#10003;</span> Pros</div>
+              <ul class="pros-list">
+                <li><span class="check-icon">&#10003;</span> Ultra-slim 1.8mm profile</li>
+                <li><span class="check-icon">&#10003;</span> 5-month battery life</li>
+                <li><span class="check-icon">&#10003;</span> Fast wireless charging</li>
+                <li><span class="check-icon">&#10003;</span> Left-behind alerts</li>
+                <li><span class="check-icon">&#10003;</span> No subscription fees</li>
+                <li><span class="check-icon">&#10003;</span> IP68 water resistant</li>
+                <li><span class="check-icon">&#10003;</span> Apple Find My certified</li>
+                <li><span class="check-icon">&#10003;</span> Global tracking network</li>
+                <li><span class="check-icon">&#10003;</span> Premium card material</li>
+                <li><span class="check-icon">&#10003;</span> Loud ring-to-find sound</li>
+              </ul>
+            </div>
+            <div>
+              <div class="cons-label"><span style="color:var(--red);">&#x2717;</span> Cons</div>
+              <ul class="cons-list">
+                <li><span class="x-icon">&#x2717;</span> Often out of stock due to high demand</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pl-score-col">
+          <div class="score-label-text">Review Score</div>
+          <div class="score-num-box">9.8</div>
+          <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-5-stars-1-1-2-6.svg" alt="5 stars"
+               onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★★</div>'">
+          <div class="score-rating-word">Excellent</div>
+          <div class="review-count">9,137 Customer Reviews</div>
+          <div class="deal-badge-red">70% Off</div>
+          <div class="ltd-deal-text">Limited Time Deal</div>
+          <div class="sales-proof">2,184 people bought this week</div>
+          <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page-wrap -->
 </main>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">
-      <div class="logo-icon" style="width:22px;height:22px;font-size:11px;">★</div>
-      PrimePicks.Review
+    <div class="footer-logo-row">
+      <img src="https://primepicks.review/wp-content/uploads/PrimePicks_logo_black.svg" alt="PrimePicks Review"
+           style="height:22px;"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="footer-logo-text" style="display:none;">PrimePicks.Review</span>
     </div>
     <div class="footer-links">
       <a href="#">About Us</a>
@@ -1160,20 +1085,11 @@
       <a href="#">Contact us</a>
     </div>
     <div class="footer-copy">
-      Copyright © 2026 - PrimePicks.Review All Rights Reserved<br>
-      This site accepts advertising compensation from companies which affects how and where products appear on this page. All representations about product information, including pricing, are subject to change at any time.
+      Copyright &copy; 2026 - PrimePicks.Review All Rights Reserved<br>
+      This site is a free online resource that strives to offer helpful content and comparison features to its visitors. Please be advised that the operator of this site accepts advertising compensation from companies that appear on the site, and such compensation impacts the location and order in which the companies (and/or their products) are presented, and in some cases may also impact the scoring that is assigned to them.
     </div>
   </div>
 </footer>
 
-<script>
-  function toggleFaq(btn) { btn.closest('.faq-card').classList.toggle('open'); }
-  function toggleReadMore(id, btn) {
-    const el = document.getElementById(id);
-    el.classList.toggle('open');
-    btn.classList.toggle('open');
-    btn.childNodes[0].textContent = el.classList.contains('open') ? 'Read Less ' : 'Read More ';
-  }
-</script>
 </body>
 </html>
