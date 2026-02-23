@@ -74,7 +74,7 @@
       line-height: 1.22; margin-bottom: 8px; letter-spacing: -0.02em;
     }
     .hero-intro {
-      font-size: 16.5px; color: var(--gray-2); line-height: 1.8;
+      font-size: 16.5px; color: #111111; line-height: 1.8;
       margin: 0; padding: 14px 0 18px;
       border-top: 1px solid var(--gray-6);
     }
@@ -146,8 +146,13 @@
     .pl-body {
       display: grid;
       grid-template-columns: 190px 1fr 200px;
+      grid-template-rows: auto;
       gap: 0;
     }
+    /* Desktop: explicit placement (HTML order: img, score, mobile-cta[hidden], info) */
+    .pl-img-col   { grid-column: 1; grid-row: 1; }
+    .pl-score-col { grid-column: 3; grid-row: 1; }
+    .pl-info-col  { grid-column: 2; grid-row: 1; }
     .pl-img-col {
       padding: 18px 16px;
       display: flex; align-items: center; justify-content: center;
@@ -177,7 +182,7 @@
     .cons-label { color: var(--red); }
     .pros-list, .cons-list { list-style: none; }
     .pros-list li, .cons-list li {
-      font-size: 14.5px; color: var(--gray-2);
+      font-size: 14.5px; color: #111111;
       padding: 3px 0; display: flex; align-items: flex-start; gap: 5px;
       line-height: 1.5;
     }
@@ -217,9 +222,10 @@
     .sales-proof { font-size: 10.5px; color: var(--gray-3); font-style: italic; margin-bottom: 6px; }
     .cta-visit {
       display: block; background: var(--product-cta-bg);
-      color: white; text-align: center; padding: 9px 14px;
-      border-radius: 5px; font-weight: 700; font-size: 13px;
+      color: white; text-align: center; padding: 13px 14px;
+      border-radius: 5px; font-weight: 700; font-size: 15px;
       text-decoration: none !important; width: 100%;
+      text-transform: uppercase; letter-spacing: 0.04em;
       box-shadow: 0 3px 0 var(--product-cta-shadow);
       transition: background 0.15s, transform 0.1s;
     }
@@ -250,26 +256,26 @@
       border-radius: 5px; margin-bottom: 18px; display: block;
     }
     .editorial-h2 {
-      font-size: 34px; font-weight: 800; color: var(--gray-1);
+      font-size: 38px; font-weight: 800; color: var(--gray-1);
       line-height: 1.2; margin-bottom: 20px; letter-spacing: -0.025em;
       border-left: 5px solid var(--product-index-bg);
       padding-left: 16px;
     }
     .editorial-main p {
-      font-size: 16px; line-height: 1.85; color: var(--gray-2);
+      font-size: 16px; line-height: 1.85; color: #111111;
       margin-bottom: 15px;
     }
     .editorial-main h3 {
-      font-size: 18px; font-weight: 700; color: var(--gray-1);
+      font-size: 21px; font-weight: 700; color: var(--gray-1);
       margin: 22px 0 10px;
     }
     .editorial-main h2 {
-      font-size: 22px; font-weight: 800; color: var(--gray-1);
+      font-size: 25px; font-weight: 800; color: var(--gray-1);
       margin: 24px 0 12px; letter-spacing: -0.01em;
     }
     .results-list { list-style: none; margin: 10px 0 16px; }
     .results-list li {
-      font-size: 16px; color: var(--gray-2); padding: 8px 0;
+      font-size: 16px; color: #111111; padding: 8px 0;
       display: flex; align-items: flex-start; gap: 10px;
       line-height: 1.6; border-bottom: 1px solid var(--gray-6);
     }
@@ -323,8 +329,8 @@
     .sidebar-feats li::before { content: "✓"; color: var(--product-index-bg); font-weight: 700; flex-shrink: 0; }
     .sidebar-cta {
       display: block; background: var(--product-cta-bg); color: white;
-      text-align: center; padding: 11px; border-radius: 5px;
-      font-weight: 700; font-size: 13px; text-decoration: none !important;
+      text-align: center; padding: 16px; border-radius: 5px;
+      font-weight: 700; font-size: 15px; text-decoration: none !important;
       box-shadow: 0 3px 0 var(--product-cta-shadow);
       transition: background 0.15s, transform 0.1s;
     }
@@ -352,7 +358,7 @@
       background: white; border: 1px solid var(--gray-5);
       border-radius: 6px; padding: 20px 22px; margin-bottom: 18px;
     }
-    .reviews-section h2 { font-size: 18px; font-weight: 800; margin-bottom: 16px; }
+    .reviews-section h2 { font-size: 21px; font-weight: 800; margin-bottom: 16px; }
     .review-card {
       background: #fafafa; border: 1px solid #f1f1f1;
       border-radius: 4px; padding: 20px 24px 16px 20px;
@@ -364,19 +370,19 @@
     .rev-name { font-weight: 700; font-size: 15px; color: var(--gray-1); }
     .rev-loc { font-size: 13px; color: var(--gray-3); }
     .rev-stars { margin-top: 4px; }
-    .rev-text { font-size: 15.5px; color: var(--gray-2); line-height: 1.8; }
+    .rev-text { font-size: 15.5px; color: #111111; line-height: 1.8; }
 
     /* ── PURCHASE SECTION ── */
     .purchase-section {
       background: white; border: 1px solid var(--gray-5);
       border-radius: 6px; padding: 20px 22px; margin-bottom: 18px;
     }
-    .purchase-section h2 { font-size: 18px; font-weight: 800; margin-bottom: 13px; }
-    .purchase-section p { font-size: 16px; line-height: 1.85; color: var(--gray-2); margin-bottom: 13px; }
+    .purchase-section h2 { font-size: 21px; font-weight: 800; margin-bottom: 13px; }
+    .purchase-section p { font-size: 16px; line-height: 1.85; color: #111111; margin-bottom: 13px; }
     .purchase-section p:last-child { margin-bottom: 0; }
     .steps-list { list-style: none; margin: 12px 0; }
     .steps-list li {
-      font-size: 16px; color: var(--gray-2); padding: 7px 0;
+      font-size: 16px; color: #111111; padding: 7px 0;
       display: flex; gap: 10px; line-height: 1.6; align-items: flex-start;
     }
     .step-num {
@@ -388,8 +394,8 @@
     .buy-cta-block { margin-top: 16px; text-align: center; }
     .buy-cta-btn {
       display: inline-block; background: var(--product-cta-bg);
-      color: white; padding: 13px 32px; border-radius: 6px;
-      font-weight: 700; font-size: 15px; text-decoration: none !important;
+      color: white; padding: 19px 36px; border-radius: 6px;
+      font-weight: 700; font-size: 18px; text-decoration: none !important;
       box-shadow: 0 4px 0 var(--product-cta-shadow);
       transition: background 0.15s, transform 0.1s;
     }
@@ -476,18 +482,79 @@
     .modal-body { padding: 22px 24px; font-size: 14px; line-height: 1.75; color: #333; }
     .modal-body p { color: #333; margin: 0; }
 
+    /* Mobile CTA row + review link: hidden on desktop, shown on mobile */
+    .pl-mobile-cta-row { display: none; }
+    .pl-review-link { display: none; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      .pl-body { grid-template-columns: 1fr; }
-      .pl-img-col { border-right: none; border-bottom: 1px solid var(--gray-6); }
-      .pl-info-col { border-right: none; border-bottom: 1px solid var(--gray-6); }
+      /* Product card: image (120px) + score side-by-side, CTA row below, then info */
+      .pl-body {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: auto auto auto;
+        font-size: 15px;
+      }
+      .pl-img-col {
+        grid-column: 1; grid-row: 1;
+        border-right: 1px solid var(--gray-6);
+        border-bottom: none;
+        padding: 14px 10px;
+      }
+      .pl-product-img { width: 100px; height: 100px; }
+      .pl-score-col {
+        grid-column: 2; grid-row: 1;
+        border-right: none;
+        border-bottom: none;
+        padding: 12px 10px;
+      }
+      /* Hide CTA button + deal badges inside score col on mobile (moved to mobile-cta-row) */
+      .pl-score-col .cta-visit,
+      .pl-score-col .deal-badge-red,
+      .pl-score-col .ltd-deal-text,
+      .pl-score-col .sales-proof { display: none; }
+      /* Show mobile CTA row spanning full width */
+      .pl-mobile-cta-row {
+        display: block;
+        grid-column: 1 / -1; grid-row: 2;
+        padding: 10px 14px;
+        border-top: 1px solid var(--gray-6);
+        border-bottom: 1px solid var(--gray-6);
+        background: #fafff8;
+      }
+      .pl-mobile-cta-row .cta-visit {
+        display: block;
+        padding: 13px 14px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .pl-mobile-deal-info {
+        font-size: 12px; color: var(--gray-2); text-align: center;
+        margin-bottom: 6px;
+      }
+      .pl-mobile-deal-info strong { color: #e53935; }
+      /* Info col full width below */
+      .pl-info-col {
+        grid-column: 1 / -1; grid-row: 3;
+        border-right: none;
+        border-top: none;
+        padding: 14px 14px 10px;
+      }
+      /* Review link shown on mobile */
+      .pl-review-link {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px; font-weight: 700;
+        color: var(--text-link);
+        text-decoration: underline;
+      }
       .editorial-inner { grid-template-columns: 1fr; }
-      .editorial-sidebar { border-top: 1px solid var(--gray-6); }
+      .editorial-sidebar { display: none; }
       .tsc-body { grid-template-columns: 1fr; }
       .hero h1 { font-size: 26px; }
-      .editorial-h2 { font-size: 24px; }
-      .editorial-main h2 { font-size: 20px; }
-      .pl-body { font-size: 15px; }
+      .editorial-h2 { font-size: 28px; }
+      .editorial-main h2 { font-size: 23px; }
     }
   </style>
 </head>
@@ -562,6 +629,22 @@
             <img class="pl-product-img" src="https://primepicks.review/img/MV8uanBn.jpg" alt="Tagsley"
                  onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=Tagsley'">
           </div>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">9.8</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-5-stars-1-1-2-6.svg" alt="5 stars"
+                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★★</div>'">
+            <div class="score-rating-word">Excellent</div>
+            <div class="review-count">9,137 Customer Reviews</div>
+            <div class="deal-badge-red">70% Off</div>
+            <div class="ltd-deal-text">Limited Time Deal</div>
+            <div class="sales-proof">2,184 people bought this week</div>
+            <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site >></a>
+          </div>
+          <div class="pl-mobile-cta-row">
+            <div class="pl-mobile-deal-info"><strong>70% Off</strong> — Limited Time Deal &nbsp;·&nbsp; 2,184 bought this week</div>
+            <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site >></a>
+          </div>
           <div class="pl-info-col">
             <div class="pl-product-name">Tagsley</div>
             <div class="pros-cons-cols">
@@ -587,18 +670,7 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="pl-score-col">
-            <div class="score-label-text">Review Score</div>
-            <div class="score-num-box">9.8</div>
-            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-5-stars-1-1-2-6.svg" alt="5 stars"
-                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★★</div>'">
-            <div class="score-rating-word">Excellent</div>
-            <div class="review-count">9,137 Customer Reviews</div>
-            <div class="deal-badge-red">70% Off</div>
-            <div class="ltd-deal-text">Limited Time Deal</div>
-            <div class="sales-proof">2,184 people bought this week</div>
-            <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site</a>
+            <a href="https://tagsleyshop.com/pp/us/" class="pl-review-link">Read Full Product Review</a>
           </div>
         </div>
       </div>
@@ -616,6 +688,18 @@
           <div class="pl-img-col">
             <img class="pl-product-img" src="https://primepicks.review/img/Ml8uanBn.jpg" alt="Tile Pro"
                  onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=Tile+Pro'">
+          </div>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">8.6</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-4-half-stars-1-1-1-2-2-2.svg" alt="4.5 stars"
+                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★½</div>'">
+            <div class="score-rating-word s2">Good</div>
+            <div class="review-count">1,134 Customer Reviews</div>
+            <a href="#" class="cta-visit">Visit site >></a>
+          </div>
+          <div class="pl-mobile-cta-row">
+            <a href="#" class="cta-visit">Visit site >></a>
           </div>
           <div class="pl-info-col">
             <div class="pl-product-name">Tile Pro (by Target)</div>
@@ -637,15 +721,7 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="pl-score-col">
-            <div class="score-label-text">Review Score</div>
-            <div class="score-num-box">8.6</div>
-            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/TrustRate-4-half-stars-1-1-1-2-2-2.svg" alt="4.5 stars"
-                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★½</div>'">
-            <div class="score-rating-word s2">Good</div>
-            <div class="review-count">1,134 Customer Reviews</div>
-            <a href="#" class="cta-visit">Visit site</a>
+            <a href="#" class="pl-review-link">Read Full Product Review</a>
           </div>
         </div>
       </div>
@@ -663,6 +739,18 @@
           <div class="pl-img-col">
             <img class="pl-product-img" src="https://primepicks.review/img/M18uanBn.jpg" alt="SmartTrack Card"
                  onerror="this.src='https://placehold.co/150x150/f2f2f2/555?text=SmartTrack'">
+          </div>
+          <div class="pl-score-col">
+            <div class="score-label-text">Review Score</div>
+            <div class="score-num-box">8.2</div>
+            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/product-3-rating-2.svg" alt="4 stars"
+                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★☆</div>'">
+            <div class="score-rating-word s2">Good</div>
+            <div class="review-count">923 Customer Reviews</div>
+            <a href="#" class="cta-visit">Visit site >></a>
+          </div>
+          <div class="pl-mobile-cta-row">
+            <a href="#" class="cta-visit">Visit site >></a>
           </div>
           <div class="pl-info-col">
             <div class="pl-product-name">SmartTrack Card (by Eufy)</div>
@@ -685,15 +773,7 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="pl-score-col">
-            <div class="score-label-text">Review Score</div>
-            <div class="score-num-box">8.2</div>
-            <img class="stars-img" src="https://primepicks.review/wp-content/uploads/product-3-rating-2.svg" alt="4 stars"
-                 onerror="this.outerHTML='<div style=\'color:#dd9302;font-size:16px;\'>★★★★☆</div>'">
-            <div class="score-rating-word s2">Good</div>
-            <div class="review-count">923 Customer Reviews</div>
-            <a href="#" class="cta-visit">Visit site</a>
+            <a href="#" class="pl-review-link">Read Full Product Review</a>
           </div>
         </div>
       </div>
@@ -992,7 +1072,7 @@
           <div class="deal-badge-red">70% Off</div>
           <div class="ltd-deal-text">Limited Time Deal</div>
           <div class="sales-proof">2,184 people bought this week</div>
-          <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site</a>
+          <a href="https://tagsleyshop.com/pp/us/" class="cta-visit">Visit site >></a>
         </div>
       </div>
     </div>
