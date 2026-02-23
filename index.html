@@ -38,6 +38,7 @@
     a { color: var(--text-link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     strong { font-weight: 700; }
+    p { color: #111111; }
 
     /* ── HEADER ── */
     header {
@@ -443,6 +444,38 @@
     .footer-links a:hover { color: var(--gray-1); text-decoration: underline; }
     .footer-copy { font-size: 11px; color: #828282; line-height: 1.7; max-width: 720px; }
 
+    /* ── ADVERTISING DISCLOSURE LINK ── */
+    .disc-link {
+      color: var(--gray-3); font-size: 12px; text-decoration: underline;
+      text-underline-offset: 2px; cursor: pointer;
+    }
+    .disc-link:hover { color: var(--gray-1); }
+
+    /* ── MODAL ── */
+    .modal-backdrop {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.55); align-items: center; justify-content: center;
+      padding: 20px;
+    }
+    .modal-box {
+      background: #fff; border-radius: 8px;
+      max-width: 620px; width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+    .modal-head {
+      background: var(--product-heading-bg); color: white;
+      padding: 16px 22px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .modal-head h3 { font-size: 16px; font-weight: 700; margin: 0; }
+    .modal-close {
+      background: none; border: none; color: white; font-size: 22px;
+      cursor: pointer; line-height: 1; padding: 0 4px; opacity: 0.8;
+    }
+    .modal-close:hover { opacity: 1; }
+    .modal-body { padding: 22px 24px; font-size: 14px; line-height: 1.75; color: #333; }
+    .modal-body p { color: #333; margin: 0; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .pl-body { grid-template-columns: 1fr; }
@@ -488,7 +521,9 @@
         </div>
       </div>
       <span class="meta-sep">|</span>
-      <span>Last Updated -</span>
+      <span>Last Updated - Yesterday</span>
+      <span class="meta-sep">|</span>
+      <a href="#" class="disc-link" onclick="document.getElementById('disc-modal').style.display='flex'; return false;">Advertising disclosure</a>
       <span class="meta-sep">|</span>
       <span class="flag-us">
         <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/flag-us.svg" alt="US" style="height:14px;" onerror="this.outerHTML='🇺🇸'">
@@ -508,11 +543,6 @@
 <!-- MAIN -->
 <main>
   <div class="page-wrap">
-
-    <!-- Disclosure -->
-    <div class="disclosure">
-      <strong><a href="https://primepicks.review/legal/advertising-disclosure/" style="color:var(--gray-2);">Advertising disclosure</a></strong> — This site accepts advertising compensation from companies which affects how and where products appear on this page.
-    </div>
 
     <!-- ═══ PRODUCT LIST ═══ -->
     <div class="product-list">
@@ -992,6 +1022,25 @@
     </div>
   </div>
 </footer>
+
+<!-- ADVERTISING DISCLOSURE MODAL -->
+<div id="disc-modal" class="modal-backdrop" onclick="if(event.target===this)this.style.display='none';">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>Advertising Disclosure</h3>
+      <button class="modal-close" onclick="document.getElementById('disc-modal').style.display='none';">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>This site is a free online resource that strives to offer helpful content and comparison features to its visitors. Please be advised that the operator of this site accepts advertising compensation from companies that appear on the site, and such compensation impacts the location and order in which the companies (and/or their products) are presented, and in some cases may also impact the rating that is assigned to them. To the extent that ratings appear on this site, such rating is determined by our subjective opinion and based on a methodology that aggregates our analysis of brand market share and reputation, each brand's conversion rates, compensation paid to us and general consumer interest. Company listings on this page DO NOT imply endorsement. Except as expressly set forth in our <a href="/terms-of-use" style="color:var(--text-link);">Terms of Use</a>, all representations and warranties regarding the information presented on this page are disclaimed. The information, including pricing, which appears on this site is subject to change at any time.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('disc-modal').style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
