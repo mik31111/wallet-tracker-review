@@ -306,9 +306,8 @@
     .sidebar-head-title { color: white; font-size: 12px; font-weight: 600; }
     .sidebar-body { padding: 14px 16px; text-align: center; }
     .sidebar-img {
-      width: 120px; height: 120px; object-fit: contain;
-      background: var(--gray-6); border-radius: 6px;
-      padding: 10px; display: block; margin: 0 auto 10px;
+      width: 155px; height: 155px; object-fit: contain;
+      display: block; margin: 0 auto 10px;
     }
     .sidebar-prod-name { font-size: 16px; font-weight: 700; color: var(--gray-1); margin-bottom: 6px; }
     .sidebar-deal { background: #ff4444; color: white; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 3px; display: inline-block; margin-bottom: 8px; }
@@ -437,22 +436,28 @@
     /* ── BOTTOM SUMMARY CARD ── */
     .bsc-card {
       background: white;
-      border: 2px solid #d0d7e0;
+      border: 1px solid #dde3ea;
       border-radius: 8px;
       overflow: hidden;
       margin-bottom: 0;
       position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     .bsc-rank-badge {
       position: absolute; top: 0; left: 0;
-      background: #e07b00; color: white;
-      font-weight: 800; font-size: 13px; line-height: 1.2;
-      padding: 5px 11px 7px 8px;
-      border-radius: 7px 0 10px 0;
+      width: 0; height: 0;
+      border-style: solid;
+      border-width: 58px 58px 0 0;
+      border-color: #e07b00 transparent transparent transparent;
       z-index: 2;
     }
+    .bsc-rank-num {
+      position: absolute; top: 9px; left: 5px;
+      color: white; font-weight: 800; font-size: 15px; line-height: 1;
+      z-index: 3;
+    }
     .bsc-body {
-      display: grid; grid-template-columns: 230px 1fr; gap: 0;
+      display: grid; grid-template-columns: 250px 1fr; gap: 0;
     }
     .bsc-left {
       padding: 20px 16px;
@@ -461,7 +466,7 @@
       border-right: 1px solid var(--gray-6);
     }
     .bsc-img {
-      width: 120px; height: 120px; object-fit: contain;
+      width: 130px; height: 130px; object-fit: contain;
       margin-bottom: 8px;
     }
     .bsc-bars { margin: 10px 0 0; width: 100%; }
@@ -544,6 +549,17 @@
     .modal-close:hover { opacity: 1; }
     .modal-body { padding: 22px 24px; font-size: 14px; line-height: 1.75; color: #333; }
     .modal-body p { color: #333; margin: 0; }
+
+    /* Sections merged inside editorial-main (remove box styling) */
+    .editorial-main .reviews-section,
+    .editorial-main .purchase-section {
+      background: transparent; border: none; border-radius: 0;
+      padding: 0; margin-bottom: 0; margin-top: 24px;
+    }
+    .editorial-main .reviews-section h2,
+    .editorial-main .purchase-section h2 {
+      font-size: 25px; font-weight: 700; color: var(--gray-1); margin: 22px 0 12px;
+    }
 
     /* Mobile CTA row + review link: hidden on desktop, shown on mobile */
     .pl-mobile-cta-row { display: none; }
@@ -959,6 +975,75 @@
 
           <p>Tagsley gives you the ultimate peace of mind against losing your most valuable possessions, all without the hassle.</p>
 
+          <!-- ═══ CUSTOMER REVIEWS ═══ -->
+          <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+
+            <div class="review-card">
+              <div class="review-top">
+                <div class="rev-meta">
+                  <div class="rev-name">Jake Hernandez</div>
+                  <div class="rev-loc">New Hampshire</div>
+                  <div class="rev-stars">
+                    <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
+                  </div>
+                </div>
+              </div>
+              <p class="rev-text">I've been using Tagsley for about 4 months now, and it's already saved me twice. Once when I left my wallet at a restaurant (Find My showed exactly which table), and another time when it slipped between my car seats. The battery life is exactly as advertised. I charge it maybe once every few months. Worth every penny for the peace of mind.</p>
+            </div>
+
+            <div class="review-card">
+              <div class="review-top">
+                <div class="rev-meta">
+                  <div class="rev-name">Hannah Stevens</div>
+                  <div class="rev-loc">Oregon</div>
+                  <div class="rev-stars">
+                    <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
+                  </div>
+                </div>
+              </div>
+              <p class="rev-text">i lost my purse at the mall last week and was freaking out because it had everything in it… credit cards, ID, cash, everything. i used the app and found it in like 5 minutes at the food court where i forgot it. my friends think im paranoid for putting a tracker in my wallet but hey, better safe than sorry and who was right, right?</p>
+            </div>
+
+            <div class="review-card">
+              <div class="review-top">
+                <div class="rev-meta">
+                  <div class="rev-name">Dana Fahrsted</div>
+                  <div class="rev-loc">Georgia</div>
+                  <div class="rev-stars">
+                    <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
+                  </div>
+                </div>
+              </div>
+              <p class="rev-text">I'm someone who misplaces things alot and this has already saved me twice – once when my wallet slipped between car seats and another time when I left it at restaurant. No complaints 5/5</p>
+            </div>
+          </div>
+
+          <!-- ═══ PURCHASE ═══ -->
+          <div class="purchase-section">
+            <h2>Purchase and Delivery Process</h2>
+            <p>Getting Tagsley is really simple.</p>
+            <p>Since Tagsley is sold exclusively online, you're getting it at an affordable price without the markups you'd find in stores.</p>
+            <p>I placed my order at the start of the week, and to my surprise, it <strong>arrived just 3 days later</strong>. This was the fastest delivery out of all the products I've tested!</p>
+            <p>And the discount was already applied at checkout, so there was no need to mess around with typing in discount codes or searching for deals. It was all done for me, which made the whole process even easier.</p>
+          </div>
+
+          <!-- WHERE TO BUY -->
+          <div class="purchase-section">
+            <h2>Where Can I Buy the Tagsley Tracking Card?</h2>
+            <p>Getting your own Tagsley with a 70% discount is simple. Just follow these steps:</p>
+            <ol class="steps-list">
+              <li><span class="step-num">1</span> Go to the official Tagsley website;</li>
+              <li><span class="step-num">2</span> Choose the number of Tagsley cards you want;</li>
+              <li><span class="step-num">3</span> Enter your shipping and payment details;</li>
+              <li><span class="step-num">4</span> Confirm your order and enjoy knowing your belongings are safe and trackable!</li>
+            </ol>
+            <div class="buy-cta-block">
+              <a href="https://tagsleyshop.com/pp/us/" class="buy-cta-btn">Click Here to Get 70%</a>
+              <div class="buy-cta-sub">Limited stock available. Discount applied automatically at checkout.</div>
+            </div>
+          </div>
+
         </div><!-- /editorial-main -->
 
         <!-- Right: sidebar -->
@@ -973,7 +1058,7 @@
                 <img class="sidebar-img"
                      src="https://primepicks.review/img/MV8uanBn.jpg"
                      alt="Tagsley"
-                     onerror="this.src='https://placehold.co/120x120/f2f2f2/555?text=Tagsley'">
+                     onerror="this.src='https://placehold.co/155x155/f2f2f2/555?text=Tagsley'">
                 <div class="sidebar-prod-name">Tagsley</div>
                 <span class="sidebar-deal">70% OFF</span>
                 <div class="sidebar-score-big">9.8</div>
@@ -1024,79 +1109,9 @@
       </div><!-- /editorial-inner -->
     </div><!-- /editorial-wrap -->
 
-    <!-- ═══ CUSTOMER REVIEWS ═══ -->
-    <div class="reviews-section">
-      <h2>Customer Reviews</h2>
-
-      <div class="review-card">
-        <div class="review-top">
-          <div class="rev-meta">
-            <div class="rev-name">Jake Hernandez</div>
-            <div class="rev-loc">New Hampshire</div>
-            <div class="rev-stars">
-              <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
-            </div>
-          </div>
-        </div>
-        <p class="rev-text">I've been using Tagsley for about 4 months now, and it's already saved me twice. Once when I left my wallet at a restaurant (Find My showed exactly which table), and another time when it slipped between my car seats. The battery life is exactly as advertised. I charge it maybe once every few months. Worth every penny for the peace of mind.</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-top">
-          <div class="rev-meta">
-            <div class="rev-name">Hannah Stevens</div>
-            <div class="rev-loc">Oregon</div>
-            <div class="rev-stars">
-              <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
-            </div>
-          </div>
-        </div>
-        <p class="rev-text">i lost my purse at the mall last week and was freaking out because it had everything in it… credit cards, ID, cash, everything. i used the app and found it in like 5 minutes at the food court where i forgot it. my friends think im paranoid for putting a tracker in my wallet but hey, better safe than sorry and who was right, right?</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-top">
-          <div class="rev-meta">
-            <div class="rev-name">Dana Fahrsted</div>
-            <div class="rev-loc">Georgia</div>
-            <div class="rev-stars">
-              <img src="https://primepicks.review/wp-content/themes/commercecore-ecom/templates/reviews/v3_2/src/assets/images/green-stars.svg" alt="5 stars" style="height:16px;vertical-align:middle;" onerror="this.outerHTML='<span style=\'color:#009463;font-size:14px;\'>★★★★★</span>'">
-            </div>
-          </div>
-        </div>
-        <p class="rev-text">I'm someone who misplaces things alot and this has already saved me twice – once when my wallet slipped between car seats and another time when I left it at restaurant. No complaints 5/5</p>
-      </div>
-
-    </div>
-
-    <!-- ═══ PURCHASE + WHERE TO BUY ═══ -->
-    <div class="purchase-section">
-      <h2>Purchase and Delivery Process</h2>
-      <p>Getting Tagsley is really simple.</p>
-      <p>Since Tagsley is sold exclusively online, you're getting it at an affordable price without the markups you'd find in stores.</p>
-      <p>I placed my order at the start of the week, and to my surprise, it <strong>arrived just 3 days later</strong>. This was the fastest delivery out of all the products I've tested!</p>
-      <p>And the discount was already applied at checkout, so there was no need to mess around with typing in discount codes or searching for deals. It was all done for me, which made the whole process even easier.</p>
-    </div>
-
-    <!-- WHERE TO BUY -->
-    <div class="purchase-section">
-      <h2>Where Can I Buy the Tagsley Tracking Card?</h2>
-      <p>Getting your own Tagsley with a 70% discount is simple. Just follow these steps:</p>
-      <ol class="steps-list">
-        <li><span class="step-num">1</span> Go to the official Tagsley website;</li>
-        <li><span class="step-num">2</span> Choose the number of Tagsley cards you want;</li>
-        <li><span class="step-num">3</span> Enter your shipping and payment details;</li>
-        <li><span class="step-num">4</span> Confirm your order and enjoy knowing your belongings are safe and trackable!</li>
-      </ol>
-      <div class="buy-cta-block">
-        <a href="https://tagsleyshop.com/pp/us/" class="buy-cta-btn">Click Here to Get 70%</a>
-        <div class="buy-cta-sub">Limited stock available. Discount applied automatically at checkout.</div>
-      </div>
-    </div>
-
     <!-- Bottom Summary Card -->
     <div class="bsc-card">
-      <div class="bsc-rank-badge">#1</div>
+      <div class="bsc-rank-badge"><span class="bsc-rank-num">#1</span></div>
       <div class="bsc-body">
         <!-- Left: image + score + rating bars -->
         <div class="bsc-left">
